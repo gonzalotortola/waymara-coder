@@ -37,7 +37,7 @@
 
                 <div class=logoHeader>
                     <a
-                    href="../index.html"> <img id=logoHeader src="../assets/img/logo-header.png" alt="Waymara" title="Waymara Argentina">
+                    href="../index.html"> <img id=logoHeader src="../assets/img/SVG/logo-h-waymara.svg" alt="Waymara" title="Waymara Argentina">
                     </a>
                 </div>
 
@@ -68,28 +68,32 @@
 
                     <nav class=navHeader--responsive>
                         <ul class=navHeader__ul-left--responsive>
-                            <li class=navHeader__li>
+                            <li class=navHeader__li-rs>
                                 <label for="btn-menu">
-                                    <img class=navHeader--icon src="https://img.icons8.com/ios/50/000000/menu--v1.png"/>
+                                    <img class=navHeader--icon-rs src="https://img.icons8.com/ios/50/000000/menu--v1.png"/>
                                 </label>
                             </li>
-                            <li class=navHeader__li>
-                                <a href="#"> <img class=navHeader--icon src="https://img.icons8.com/ios/50/000000/search--v1.png"/></a>
+                            <li class="navHeader__li-rs push">
+                                <a href="#"> <img class=navHeader--icon-rs src="https://img.icons8.com/ios/50/000000/search--v1.png"/></a>
                             </li>
                         </ul>
                     </nav>
                    
-                    <a href="../index.html">
-                        <img id=logoHeader src="../assets/img/logo-header.png" alt="Waymara" title="Waymara Argentina">
+                    <a href="../index.html" id="logo-h-waymara">
+                        <img id=logoHeader src="../assets/img/SVG/logo-h-waymara.svg" alt="Waymara" title="Waymara Argentina">
+                    </a>
+
+                    <a href="../index.html" id="icono-waymara">
+                        <img id=logoHeader src="../assets/img/SVG/icono-waymara.svg" alt="Waymara" title="Waymara Argentina">
                     </a>
 
                     <nav class=navHeader--responsive>
                         <ul class=navHeader__ul-right--responsive>
-                            <li class=navHeader__li>
-                                <a href="#"> <img class=navHeader--icon src="https://img.icons8.com/ios/50/000000/like--v1.png"/></a>
+                            <li class=navHeader__li-rs>
+                                <a href="#"> <img class=navHeader--icon-rs src="https://img.icons8.com/ios/50/000000/like--v1.png"/></a>
                             </li>
-                            <li class=navHeader__li>
-                                <a href="#"> <img class=navHeader--icon src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry-1.png"/></a>
+                            <li class="navHeader__li-rs push">
+                                <a href="#"> <img class=navHeader--icon-rs src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry-1.png"/></a>
                             </li>
                         </ul>
                     </nav>
@@ -155,52 +159,46 @@
 
     </main>
 	<!-- inicio de footer --> 
+	<!-- inicio footer rs -->
     <footer class="footer-rs">
 
-        <nav class="footer-contenedor-rs">
-            <ul class="footer-nav-rs">
-                <li class="elemento-rs">
-                    <h5 class="titulo-rs">
-                        Productos
-                    </h5>
-                    <ul>
-                        <li class="link-rs">
-                            <a href="indumentaria.html">Indumentaria</a>
-                            <ul>
-                                <li class="sub-link-rs"><a href="urban.html">Urban</a></li>
-                                <li class="sub-link-rs"><a href="energy-life.html">Energy Life</a></li>
-                            </ul>
-                        </li>      
-                        <li class="link-rs"><a href="cosmetica.html">Cosmética</a></li>       
-                        <li class="link-rs"><a href="perfumeria.html">Perfumería</a></li>
-                    </ul>
-                </li>
+        <nav class="footerNav">
 
-                <li class="elemento-rs">
-                    <h5 class="titulo-rs">
-                        Sobre Waymara
-                    </h5>
-                    <ul>
-                        <li class="link-rs"><a href="">Nuestra historia</a></li>
-                        <li class="link-rs"><a href="">Compromiso sustentable</a></li>
-                        <li class="link-rs"><a href="">Nuestros valores</a></li>
-                        <li class="link-rs"><a href="">Carrera Empresarial</a></li>
-                    </ul>
-                </li>
-
-                <li class="elemento-rs">
-                    <h5 class="titulo-rs">
-                        Ayuda 
-                    </h5>
-                    <ul>
-                        <li class="link-rs"><a href="">Guía de talles</a></li>
-                        <li class="link-rs"><a href="">Preguntas frecuentes</a></li>
-                        <li class="link-rs"><a href="">Política de devoluciones</a></li>
-                        <li class="link-rs"><a href="">Código corporativo de ética</a></li>
-                        <li class="link-rs"><a href="">Códigos de producto</a></li>
-                    </ul>
-                </li>
+            <label for="touch-1"><span class="footerNav-titulo">Productos</span></label>               
+            <input type="checkbox" id="touch-1" name="touch-1"> 
+          
+            <ul class="slide-1">
+                <label for="touch-1b"><span class="footerNav-titulo-2">Indumentaria</span></label>               
+                <input type="checkbox" id="touch-1b" name="touch-1b">
+                <ul class="slide-1b">
+                    <li class="footerNav-item"><a href="urban.html">Urban</a></li> 
+                    <li class="footerNav-item"><a href="energy-life.html">Energy Life</a></li>
+                </ul>
+              <li class="footerNav-item"><a href="cosmetica.html">Cosmética</a></li>
+              <li class="footerNav-item"><a href="perfumeria.html">Perfumería</a></li>
             </ul>
+
+            <label for="touch-2"><span class="footerNav-titulo">Sobre Waymara</span></label>               
+            <input type="checkbox" id="touch-2"> 
+          
+            <ul class="slide-2">
+              <li class="footerNav-item"><a href="#">Nuestra historia</a></li> 
+              <li class="footerNav-item"><a href="#">Compromiso sustentable</a></li>
+              <li class="footerNav-item"><a href="#">Nuestros valores</a></li>
+              <li class="footerNav-item"><a href="#">Carrera Empresarial</a></li>
+            </ul>
+
+            <label for="touch-3"><span class="footerNav-titulo">Ayuda</span></label>               
+            <input type="checkbox" id="touch-3"> 
+          
+            <ul class="slide-3">
+              <li class="footerNav-item"><a href="#">Guía de talles</a></li> 
+              <li class="footerNav-item"><a href="#">Preguntas frecuentes</a></li>
+              <li class="footerNav-item"><a href="#">Política de devoluciones</a></li>
+              <li class="footerNav-item"><a href="#">Código corporativo de ética</a></li>
+              <li class="footerNav-item"><a href="#">Códigos de producto</a></li>
+            </ul>
+          
         </nav>
             
         <div id="redes-rs">
@@ -226,10 +224,9 @@
         </div>
 
     </footer>
-    <!-- fin de footer -->
+	<!-- fin footer rs -->
 
-    <!-- inicio de footer responsive -->
-
+    <!-- inicio footer -->
     <footer class="footer-color">
 
         <nav class="footer-organizacion">
@@ -306,6 +303,12 @@
         </div>
 
     </footer>
-    <!-- fin de footer responsive --> 
+    <!-- fin footer -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
