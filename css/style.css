@@ -22,6 +22,18 @@ ul {
     margin-bottom: 0 !important;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
 /* inicio header */ 
 
 .benefitBar__container {
@@ -657,6 +669,7 @@ ul {
     column-gap: 20px;
     row-gap: 50px;
     margin: 0 15% 50px 15%;
+    justify-content: center;
 }
 
 .padre-qs div:nth-child(1) {
@@ -716,6 +729,41 @@ div .parrafo-qs a {
     color: rgb(255, 153, 0);
 }
 
+.margin-body {
+    margin-right: 15%; 
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 5px solid rgba(0,0,0,0) !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #eeeeee !important;
+    background-color: rgb(255, 153, 0) !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+    color: white;
+}
+
+.accordion-body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+}
+
 /* fin QUIÉNES SOMOS*/
 
 
@@ -731,6 +779,7 @@ div .parrafo-qs a {
     column-gap: 50px;
     row-gap: 50px;
     margin: 0 15% 50px 15%;
+    justify-items: center;
 }
 
 #form-cont {
@@ -768,6 +817,12 @@ div .parrafo-qs a {
     border-style: solid;
     border-color: rgb(65, 65, 65);
     margin-bottom: 16px;
+    transition: all .2s ease;
+}
+
+.input-corto:focus, .input-largo:focus, .input-textarea:focus {
+    border-color: rgb(179, 179, 179);
+
 }
 
 .input-largo {
@@ -782,6 +837,7 @@ div .parrafo-qs a {
     border-style: solid;
     border-color: rgb(65, 65, 65);
     margin-bottom: 16px;
+    transition: all .2s ease;
 }
 
 .chkbox-container {
@@ -792,6 +848,7 @@ div .parrafo-qs a {
     cursor: pointer;
     font-size: 14px;
     width: auto;
+    font-family: 'Poppins', sans-serif;
 }
   
 /* Hide the browser's default checkbox */
@@ -843,8 +900,8 @@ div .parrafo-qs a {
 .chkbox-container .checkmark:after {
     left: 4px;
     top: 1px;
-    width: 4px;
-    height: 8px;
+    width: 6px;
+    height: 10px;
     border: solid rgb(65, 65, 65);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
@@ -863,6 +920,7 @@ div .parrafo-qs a {
     border-color: rgb(65, 65, 65);
     margin-bottom: 16px;
     resize: vertical;
+    transition: all .2s ease;
 }
 
 .boton-enviar {
@@ -905,8 +963,8 @@ div .parrafo-qs a {
 }
 
 .wsp-btn {
-    display: inline-block;
-    margin: auto;
+    display: inline-flex;
+    align-items: center;
     padding: 10px 20px;
     background-color: rgb(56, 56, 56);
     font-size: 20px;
@@ -925,7 +983,7 @@ div .parrafo-qs a {
 .fa-whatsapp {
     font-size: 28px;
     display: inline-block;
-    margin: auto;
+    margin: 0 15px 0 0;
     color: white;
 }
 
@@ -969,6 +1027,7 @@ div .parrafo-qs a {
     font-weight: 400;
     color: rgb(66, 66, 66);
     margin-top: 50px;
+    font-size: 25px;
 }
 
 #hijo0-cat article iframe {
@@ -1084,7 +1143,6 @@ div .parrafo-qs a {
     cursor: pointer;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.16);
 }
-
 
 .producto-indumentaria img {
     width: 100%;
@@ -1681,6 +1739,8 @@ div .parrafo-qs a {
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "a1" "b1" "c1" "d1";
 }
+
+
 
 /*fin CATALOGO*/
 
