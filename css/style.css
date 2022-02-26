@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(231, 231, 231) !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,6 +18,8 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 /* inicio header */ 
@@ -60,6 +62,7 @@ ul {
     height: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     outline: none;
@@ -435,12 +438,20 @@ ul {
 
 .titulo-encabezado h1 {
     text-align: center;
-    font-size: 4vw;
+    font-size: calc(15px + 4vw);
     color: white;
     font-weight: 600;
 }
 
 /* inicio INDEX */
+
+.carousel {
+    margin-bottom: 25px;
+}
+
+#carousel-mobile {
+    display: none;
+}
 
 .grid-index {
     margin: 0% 15% 50px 15%;
@@ -494,6 +505,7 @@ ul {
     font-size: 24px;
     font-weight: 600;
     color: orange;
+    font-family: 'Poppins', sans-serif;
 }
 
 .lo-ultimo {
@@ -540,6 +552,7 @@ ul {
 } 
 
 .producto h4 {
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     align-self: flex-start;
@@ -547,6 +560,7 @@ ul {
 }
 
 .producto p {
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: 400;
     align-self: flex-start;
@@ -559,6 +573,7 @@ ul {
     height: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     outline: none;
@@ -571,6 +586,64 @@ ul {
 }
 
 /* fin INDEX */
+
+/* COSMÉTICA */
+
+.col {
+    --bs-gutter-y: 25px;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: rgb(255, 153, 0) !important;
+    border-color: rgb(255, 153, 0) !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    font-weight: 400!important;
+    font-size: 14px !important;
+    border-radius: 0  !important;
+}
+
+.btn-primary:hover {
+    background-color: rgb(187, 121, 0) !important;
+    border-color: rgb(187, 121, 0) !important;
+}
+
+.card {
+    border-radius: 0 !important;
+    align-items: center;
+}
+
+.card-img-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.card img {
+    vertical-align: middle;
+    text-align: center;
+    object-fit: fill;
+    transition: all 1s ease;
+}
+
+.card img:hover {
+    cursor: pointer;
+    width: 105%;
+}
 
 /* inicio QUIÉNES SOMOS */
 
@@ -1211,6 +1284,8 @@ div .parrafo-qs a {
 }
 
 .pie-contenedor a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 10px;
     color: grey;
     margin-right: 10px;
@@ -1221,9 +1296,12 @@ div .parrafo-qs a {
 
 .pie-contenedor a:hover {
     text-decoration: underline solid 1px rgba(128, 128, 128, 1);
+    color: rgb(128, 128, 128);
 }
 
 .copyright {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     display: block;
     font-size: 10px;
     text-align: center;
@@ -1466,6 +1544,20 @@ div .parrafo-qs a {
     background-color: rgb(238, 238, 238);
 }
 
+.sideNav__link--1:hover {
+    color: black;
+}
+
+.sideNav__items .sideNav__link--catalogo {
+    color: rgb(255, 145, 0);
+}
+
+.sideNav__items .sideNav__link--2 {
+    color: rgb(255, 145, 0);
+}
+
+
+
 .sideNav__container label {
     position: absolute;
     right: 15px;
@@ -1480,6 +1572,18 @@ div .parrafo-qs a {
 
 /* inicio INDEX */
 
+.carousel {
+    padding-top: 156px;
+}
+
+#carousel-mobile {
+    display: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    padding: 115px 0 0 0 !important;
+}
+
 .grid-index {
     grid-template-columns: 1fr;
     grid-template-rows: 50px 300px 300px 300px 50px 300px 300px 300px;
@@ -1492,6 +1596,13 @@ div .parrafo-qs a {
                         "d2"
                         "d3"
 }
+
+/*inicio COSMÉTICA */
+
+.container {
+    padding-top: 155px;
+}
+
 
 /* inicio QUIÉNES SOMOS */
 
@@ -1571,8 +1682,6 @@ div .parrafo-qs a {
     grid-template-areas: "a1" "b1" "c1" "d1";
 }
 
-
-
 /*fin CATALOGO*/
 
 /* inicio INDUMENTARIA */
@@ -1607,18 +1716,6 @@ div .parrafo-qs a {
     display: block;
     background-color: rgb(37, 37, 37);
  }
-
-.footerNav-item a {
-    text-decoration : none;
-    color : #313131;
-    transition: all .2s ease;
-}
-
-.footerNav-item a::after {
-    float: right;
-    right: 10%;
-    content: '>';
-}
 
 .footerNav {
   width : 100%; 
@@ -1679,6 +1776,27 @@ div .parrafo-qs a {
     background-color: #c4c4c4;
 }
 
+.footerNav-item a {
+    text-decoration : none;
+    color : #313131;
+    transition: all .2s ease;
+}
+
+.footerNav-item a:hover {
+    text-decoration : none;
+    color : #313131;
+}
+
+.footerNav-item a::after {
+    float: right;
+    right: 10%;
+    content: '>';
+}
+
+.footerNav-item a:hover::after {
+    color : #313131;
+}
+
 .slide-1, .slide-1b, .slide-2, .slide-3 {
   clear: both;
   width:100%;
@@ -1694,6 +1812,10 @@ div .parrafo-qs a {
 
 .slide-1 .footerNav-item, .slide-1b .footerNav-item, .slide-2 .footerNav-item, .slide-3 .footerNav-item {
     padding : 30px 5% 30px 5%;
+}
+
+label {
+    display: block !important;
 }
 
 #touch-1, #touch-1b, #touch-2, #touch-3 {
@@ -1771,6 +1893,8 @@ div .parrafo-qs a {
 }
 
 .pie-contenedor-rs a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 10px;
     color: grey;
     margin-right: 10px;
@@ -1781,9 +1905,12 @@ div .parrafo-qs a {
 
 .pie-contenedor-rs a:hover {
     text-decoration: underline solid 1px rgba(128, 128, 128, 1);
+    color: rgb(128, 128, 128);
 }
 
 .copyright-rs {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     display: block;
     font-size: 10px;
     text-align: center;
@@ -1826,6 +1953,27 @@ div .parrafo-qs a {
         transition: all .2s ease;
     }
 
+    /* INDEX */
+
+    #carousel-desk {
+        display: none;
+    }
+
+    #carousel-mobile {
+        display: block;
+    }
+
+    .carousel {
+        padding-top: 115px;
+    }
+
+/*inicio COSMÉTICA */
+
+    .container {
+        padding-top: 115px;
+    }
+
+
     /* CONTACTO */
 
     .center-form-items {
@@ -1848,5 +1996,9 @@ div .parrafo-qs a {
         width: 100%;
     }
 
+    /* CATÁLOGO */
 
+    #hijo2-cat article iframe, #hijo3-cat article iframe {
+        width: 80vw;
+    }
 }
