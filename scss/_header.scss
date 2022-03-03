@@ -1,0 +1,668 @@
+@import "variables.scss";
+
+/* BARRA DE BENEFICIOS */
+
+.benefitBar__container {
+    width: 100%;
+    background-color: $gris-claro;
+
+    .benefitBar__container--content {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: $gris-oscuro;
+    }
+}
+
+/* BARRA DE LOGO */
+
+.stickyHeader {
+	background-color: $blanco;
+	top: 0px;
+
+    .mainHeader {
+        display: flex;
+        margin: 0 15% 0 15%;
+        height: 80px;
+        background-color: $blanco;
+        align-items: center;
+        justify-content: space-between;
+
+        .buttonHeader {
+            background-color: $naranja;
+            width: 200px;
+            height: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            color: $blanco;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            transition: $transicion-lenta;
+
+            &:hover {
+                box-shadow: $sombra-1;
+                background-color: $naranja-hover-oscuro;
+                transform: translateY(-5px);
+            }
+        }
+
+        .logoHeader {
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+
+                img {
+                    width: 250px;
+                    align-content: center;
+                }
+            }
+        }
+
+        .navHeader {
+            display: flex;
+            align-content: center;
+            justify-content: end;
+            background-color: $blanco;
+
+            .navHeader__ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-content: center;
+                padding-inline-start: 0px;
+            }
+            
+            .navHeader__li {
+                padding: 10px;
+                display: inline-block;
+                box-sizing: border-box;
+                text-align: center;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                label {
+                    cursor: pointer;
+                }
+
+                .navHeader--icon {
+                    width: 25px;
+                }
+            }
+        }      
+    }
+
+    /* MENÚ DE NAVEGACIÓN*/
+
+    .navBar {
+        background-color: $blanco;
+        width: 100%;
+
+        .mainNav__bar {
+            border-top: 1px solid $gris-claro;
+            width: 100%;
+            height: auto;
+
+            .mainNav__container {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-content: center;
+
+
+                .dropdown {
+                    list-style-type: none;
+                    position: relative;
+                    display: inline-block;
+                    padding: 10px;
+
+                    .dropdown-link {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: $negro;
+                        margin: 0 10px 0 10px;
+                        display: inline-block;
+                        position: relative;
+                        
+                        &:hover {
+                            color: $gris-oscuro-hover;
+
+                            &::after {
+                                width: 100%; 
+                                left: 0; 
+                            }
+                        }
+                    }
+
+                    &:hover > .dropdown-content {
+                        height: 90px;    
+                    }
+
+                    .dropdown-content {
+                        list-style-type: none;
+                        flex-direction: column;
+                        justify-content: start;
+                        align-content: start;
+                        position: absolute;
+                        display: flex;
+                        background-color: $blanco;
+                        min-width: 150px;
+                        height: 0px;
+                        box-shadow: $sombra-1;
+                        z-index: 999;
+                        overflow: hidden;
+                        transition: $transicion-lenta;
+                        padding-left: 0;
+
+                        & a {
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-decoration: none;
+                            color: $negro;
+                            margin: 0 10px 0 10px;
+                            display: inline-block;
+                            position: relative;
+                            padding: 10px 0 10px 0;
+                            transition: $transicion-rapida;
+
+                            &::after {
+                                background: none repeat scroll 0 0 transparent;
+                                bottom: 0;
+                                content: "";
+                                display: block;
+                                height: 1px;
+                                left: 0%;
+                                position: absolute;
+                                background-color: $gris-oscuro-hover;
+                                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                                width: 0;
+                            }
+
+                            &:hover {
+                                color: $gris-oscuro-hover;
+
+                                &::after {
+                                    width: 100%; 
+                                    left: 0; 
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mainNav__items {
+                    padding: 10px;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    text-align: left;                                                    
+
+                    .mainNav__links {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: $negro;
+                        margin: 0 10px 0 10px;
+                        display: inline-block;
+                        position: relative;
+                        transition: $transicion-rapida;
+
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            left: 0%;
+                            position: absolute;
+                            background-color: $gris-oscuro-hover;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover {
+                            color: $gris-oscuro-hover;
+
+                            &::after {
+                                width: 100%; 
+                                left: 0; 
+                            }
+                        }                                              
+                    }
+
+                    #barra {
+                        margin: 0px;
+                        padding: 0px;
+                        color: $naranja;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -khtml-user-select: none;
+                        -ms-user-select: none;
+                    }
+
+                    .mainNav__link--catalogo {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: $naranja;
+                        margin: 0 10px 0 10px;
+                        display: inline-block;
+                        position: relative;
+                        transition: $transicion-rapida;
+
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            left: 0%;
+                            position: absolute;
+                            background: $naranja-hover-claro;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover {
+                            color: $naranja-hover-claro;
+
+                            &::after{
+                                width: 100%; 
+                                left: 0; 
+                            }
+                        }
+                    }
+                                      
+                    .mainNav__link--2 {
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: $naranja;
+                        margin: 0 10px 0 10px;
+                        display: inline-block;
+                        position: relative;
+                        transition: $transicion-rapida;
+
+                        &::after {
+                            background: none repeat scroll 0 0 transparent;
+                            bottom: 0;
+                            content: "";
+                            display: block;
+                            height: 1px;
+                            left: 0%;
+                            position: absolute;
+                            background: $naranja-hover-claro;
+                            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                            width: 0;
+                        }
+
+                        &:hover {
+                            color: $naranja-hover-claro;
+
+                            &::after{
+                                width: 100%; 
+                                left: 0; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* inicio BREADCRUMBS */
+
+.ruta-qs {
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid $gris-claro;
+
+    p {
+        margin: 0 15% 0 15%;
+        text-align: left;
+        font-size: 12px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: $gris;
+
+        a {
+            text-decoration: none;
+            color: $gris;
+
+            &:visited {
+                text-decoration: none;
+                color: $gris;
+            }
+        }
+    }
+
+    span {
+        color: $gris-oscuro-hover;
+    }
+}
+
+
+/* RESPONSIVE DESACTIVADO */
+
+.mainHeader--responsive {
+    display: none;
+}
+
+.buttonHeader--responsive {
+    display: none;
+}
+
+.navHeader--responsive{
+    display: none;
+}
+
+.sideNav {
+    display: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+/* RESPONSIVE*/
+
+@media (max-width: 1024px) {
+
+    /* DESACTIVADOS */
+
+    .stickyHeader {
+
+        .mainHeader { 
+            display: none;
+        }
+    }
+
+    .navBar {
+        display: none;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    header {
+        top: 0;
+        position: fixed;
+        width: 100vw;
+        z-index: 10;
+    }
+
+    .ruta-qs {
+        display: none;
+    }
+
+    /* BARRA DE BENEFICIOS */
+
+    .buttonHeader--responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $naranja;
+        padding: 5px;
+
+        .buttonHeader-text {
+            text-align: center;
+            font-size: 14px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: $blanco;
+        }
+    }
+
+    /* BARRA DE LOGO */
+
+    .mainHeader--responsive {
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 80px;
+        background-color: $blanco;
+        align-items: center;
+        justify-content: space-between;
+
+        .navHeader--responsive {
+            display: inline;
+        }
+    
+        .logoHeader--responsive {
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+
+            #logo-h-waymara {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                #logoHeader {
+                    width: 200px;
+                    text-align: center;
+                }
+            }
+
+            #icono-waymara { /* ícono de small */
+                display: none;
+            }
+        }
+
+        /* BARRA DE LOGO > ÍCONOS */
+
+        .navHeader__li-rs {
+        
+            a {
+                display: flex;
+            }
+
+            label {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .push {
+            margin-left: 7vw;
+            transition: $transicion-rapida;
+        }
+
+        .navHeader--icon-rs {
+            width: 25px;
+            cursor: pointer;
+        }  
+
+        .navHeader__ul-right--responsive {
+            list-style-type: none;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            padding-inline-start: 0px;
+            width: fit-content;
+        }
+
+        .navHeader__ul-left--responsive {
+            list-style-type: none;
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            padding-inline-start: 0px;
+            width: fit-content;
+        }
+    }
+
+
+    /* MENÚ HAMBURGUESA */
+
+    #btn-menu:checked ~ .sideNav {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #btn-menu:checked ~ .sideNav .sideNav__container {
+        transform: translateX(0%);
+    }
+
+    .sideNav {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255,255,255,0.5);
+        top: 0;
+        left: 0;
+        transition: 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+
+        .sideNav__container {
+            width: 100%;
+            max-width: 250px;
+            background-color: $blanco;
+            height: 100vh;
+            position: fixed;
+            transition: .5s ease;
+            transform: translateX(-100%);
+            box-shadow: 6px 0px 7px -4px rgba(0,0,0,0.15);
+
+            label {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                margin: 2px;
+                cursor: pointer;
+
+                img {
+                    width: 25px;
+                }
+            }
+
+            .sideNav__menu {
+                transform: translateY(20%);
+
+                .sideNav__items {
+
+                    .sideNav__link--1 {
+                        display: block;
+                        text-decoration: none;
+                        padding: 20px;
+                        border-bottom: 1px solid $gris-claro;
+                        transition: 400ms ease;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-decoration: none;
+                        color: $negro;
+                        margin: 10px;
+
+                        &:hover {
+                            background-color: $gris-claro;
+                        }
+                    }
+
+                .sideNav__link--catalogo {
+                    display: block;
+                    text-decoration: none;
+                    padding: 20px;
+                    border-bottom: 1px solid $gris-claro;
+                    transition: 400ms ease;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: $naranja;
+                    margin: 10px;
+
+                    &:hover {
+                        background-color: $gris-claro;
+                    }
+                }
+
+                .sideNav__link--2 {
+                    display: block;
+                    text-decoration: none;
+                    padding: 20px;
+                    border-bottom: 1px solid $gris-claro;
+                    transition: 400ms ease;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    color: $naranja;
+                    margin: 10px;
+
+                    &:hover {
+                        background-color: $gris-claro;
+                    }
+                }
+            }
+        }
+    }
+}}
+
+
+/* fin BREADCRUMBS */
+
+
+@media (max-width: 576px) {
+
+    .benefitBar__container {
+        display: none;
+    }
+
+    .mainHeader--responsive {
+          
+        .logoHeader--responsive {
+
+            #logo-h-waymara {
+                display: none;
+            }
+
+            #icono-waymara {
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                #iconHeader {
+                    width: 50px;
+                    text-align: center;
+                }
+            }  
+        }             
+
+        .push {
+            margin-left: 10vw;
+            transition: $transicion-rapida;
+        }
+    }
+}
