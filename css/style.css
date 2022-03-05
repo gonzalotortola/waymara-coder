@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(231, 231, 231) !important;
+    background-color: rgb(231, 231, 231);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -18,8 +18,8 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -31,7 +31,7 @@ strong {
 }
 
 p {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 /* inicio header */ 
@@ -619,30 +619,47 @@ p {
 
 .btn-primary {
     color: #fff;
-    background-color: rgb(255, 153, 0) !important;
-    border-color: rgb(255, 153, 0) !important;
+    background-color: rgb(255, 153, 0);
+    border-color: rgb(255, 153, 0);
+    box-shadow: none;
     font-family: 'Poppins', sans-serif;
+    outline: none;
 }
 
 .btn {
-    font-weight: 400!important;
-    font-size: 14px !important;
-    border-radius: 0  !important;
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 0;
+    margin-top: 10px;
+    background-color: rgb(255, 153, 0);
+    border-color: rgb(255, 153, 0);
+    box-shadow: none;
+    outline: none;
 }
 
-.btn-primary:hover {
-    background-color: rgb(187, 121, 0) !important;
-    border-color: rgb(187, 121, 0) !important;
+.btn:hover, .btn:active, .btn:visited, .btn:focus {
+    background-color: rgb(255, 153, 0);
+    border-color: rgb(255, 153, 0);
+    box-shadow: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: rgb(187, 121, 0);
+    border-color: rgb(187, 121, 0);
+    box-shadow: none;
+    outline: none;
 }
 
 .card {
-    border-radius: 0 !important;
+    border-radius: 0;
     align-items: center;
 }
 
 .card-img-top {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .card img {
@@ -736,22 +753,22 @@ div .parrafo-qs a {
 }
 
 .accordion-item {
-    background-color: rgba(255, 255, 255, 0) !important;
-    border: 5px solid rgba(0,0,0,0) !important;
+    background-color: rgba(255, 255, 255, 0);
+    border: 5px solid rgba(0,0,0,0);
 }
 
 .accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .accordion-button:not(.collapsed) {
-    color: #eeeeee !important;
-    background-color: rgb(255, 153, 0) !important;
+    color: #eeeeee;
+    background-color: rgb(255, 153, 0);
 }
 
 .accordion-button:focus {
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -760,7 +777,7 @@ div .parrafo-qs a {
 }
 
 .accordion-body {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 
