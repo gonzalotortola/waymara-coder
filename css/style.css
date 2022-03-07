@@ -36,6 +36,16 @@ p {
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
+/* EXTEND */
+/* CONTACTO */
+.titulos-cont, .grid-padre-cont .formulario-container .titulos-cont, .grid-padre-cont #wsp-cont .titulos-cont, .grid-padre-cont #horarios-cont .titulos-cont {
+  font-weight: 400;
+  color: #242424;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+/* MIXIN */
+/* CONTACTO */
 /* BARRA DE BENEFICIOS */
 .benefitBar__container {
   width: 100%;
@@ -504,6 +514,16 @@ p {
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
+/* EXTEND */
+/* CONTACTO */
+.titulos-cont, .grid-padre-cont .formulario-container .titulos-cont, .grid-padre-cont #wsp-cont .titulos-cont, .grid-padre-cont #horarios-cont .titulos-cont {
+  font-weight: 400;
+  color: #242424;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+/* MIXIN */
+/* CONTACTO */
 .carousel {
   margin-bottom: 25px; }
 
@@ -618,6 +638,280 @@ p {
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
+/* EXTEND */
+/* CONTACTO */
+.titulos-cont, .grid-padre-cont .formulario-container .titulos-cont, .grid-padre-cont #wsp-cont .titulos-cont, .grid-padre-cont #horarios-cont .titulos-cont {
+  font-weight: 400;
+  color: #242424;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+/* MIXIN */
+/* CONTACTO */
+/*Foto de los encabezados + título en los mains */
+.encabezado {
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: initial;
+  padding-right: initial; }
+  .encabezado .foto-encabezado {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    max-width: none;
+    width: 100vw;
+    height: auto;
+    max-height: 600px; }
+  .encabezado .titulo-encabezado {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: initial;
+    width: 100%;
+    margin: auto; }
+    .encabezado .titulo-encabezado h1 {
+      text-align: center;
+      font-size: calc(15px + 3vw);
+      color: #fff;
+      font-weight: 600; }
+
+/*     //////////      */
+.grid-padre-cont {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto auto;
+  grid-template-areas: "a1 b1" "a1 c1";
+  column-gap: 50px;
+  row-gap: 50px;
+  margin: 0 15% 50px 15%;
+  justify-items: center; }
+  .grid-padre-cont .formulario-container {
+    grid-area: a1;
+    display: flex;
+    flex-direction: column;
+    width: auto; }
+    .grid-padre-cont .formulario-container form .center-form-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline; }
+      .grid-padre-cont .formulario-container form .center-form-items .input-corto {
+        background: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        outline: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: #414141;
+        margin-bottom: 16px;
+        transition: all 0.2s ease;
+        width: 49%; }
+        .grid-padre-cont .formulario-container form .center-form-items .input-corto:focus {
+          border-color: #808080; }
+      .grid-padre-cont .formulario-container form .center-form-items .chkbox-container {
+        display: inline-block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        font-size: 14px;
+        width: auto;
+        font-family: 'Poppins', sans-serif; }
+        .grid-padre-cont .formulario-container form .center-form-items .chkbox-container .checkmark {
+          position: absolute;
+          top: 2px;
+          left: 13px;
+          height: 16px;
+          width: 16px;
+          background-color: none;
+          border: 1px solid #313131;
+          transition: all .2s ease; }
+          .grid-padre-cont .formulario-container form .center-form-items .chkbox-container .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 4px;
+            top: 1px;
+            width: 6px;
+            height: 10px;
+            border: solid #313131;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg); }
+        .grid-padre-cont .formulario-container form .center-form-items .chkbox-container input {
+          display: inline-block;
+          margin-left: 16px;
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+          .grid-padre-cont .formulario-container form .center-form-items .chkbox-container input:checked ~ .checkmark {
+            background-color: none; }
+          .grid-padre-cont .formulario-container form .center-form-items .chkbox-container input:checked ~ .checkmark:after {
+            display: block; }
+        .grid-padre-cont .formulario-container form .center-form-items .chkbox-container:hover input ~ .checkmark {
+          background-color: #eeeeee; }
+      .grid-padre-cont .formulario-container form .center-form-items .boton-enviar {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        background-color: #ff9900;
+        color: #fff;
+        padding: 6px 25px;
+        border: 1px solid #313131;
+        border-radius: 0px;
+        cursor: pointer;
+        margin-right: 16px;
+        transition: all 0.2s ease;
+        margin-left: 0;
+        margin-right: auto; }
+        .grid-padre-cont .formulario-container form .center-form-items .boton-enviar:hover {
+          background-color: #975b00; }
+      .grid-padre-cont .formulario-container form .center-form-items .boton-reestablecer {
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        background-color: none;
+        color: #313131;
+        padding: 6px 25px;
+        border: 1px solid #313131;
+        border-radius: 0px;
+        cursor: pointer;
+        margin-right: 16px;
+        transition: all 0.2s ease;
+        margin-left: auto;
+        margin-right: 0; }
+        .grid-padre-cont .formulario-container form .center-form-items .boton-reestablecer:hover {
+          background-color: #fff; }
+    .grid-padre-cont .formulario-container form .input-largo {
+      background: none;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      outline: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #313131;
+      margin-bottom: 16px;
+      transition: all 0.2s ease; }
+      .grid-padre-cont .formulario-container form .input-largo:focus {
+        border-color: #808080; }
+    .grid-padre-cont .formulario-container form .input-textarea {
+      background: none;
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      outline: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #313131;
+      margin-bottom: 16px;
+      resize: vertical;
+      transition: all 0.2s ease; }
+      .grid-padre-cont .formulario-container form .input-textarea:focus {
+        border-color: #808080; }
+  .grid-padre-cont #wsp-cont {
+    grid-area: b1; }
+    .grid-padre-cont #wsp-cont .wsp-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #313131;
+      font-size: 20px;
+      text-decoration: none;
+      color: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.2s ease; }
+      .grid-padre-cont #wsp-cont .wsp-btn:hover {
+        background-color: #128c7e;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2); }
+      .grid-padre-cont #wsp-cont .wsp-btn .fa-whatsapp {
+        font-size: 28px;
+        display: inline-block;
+        margin: 0 15px 0 0;
+        color: #fff; }
+  .grid-padre-cont #horarios-cont {
+    grid-area: c1; }
+    .grid-padre-cont #horarios-cont p {
+      font-size: 14px; }
+      .grid-padre-cont #horarios-cont p span {
+        font-style: italic; }
+
+@media (max-width: 1024px) {
+  /* Foto de los encabezados + título en los mains */
+  .encabezado {
+    padding-top: 156px; }
+    .encabezado .titulo-encabezado {
+      padding-top: 156px; }
+  /*     ////     */
+  .grid-padre-cont {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "a1" "b1" "c1";
+    align-items: center; }
+    .grid-padre-cont .formulario-container .titulos-cont, .grid-padre-cont .formulario-container #wsp-cont .titulos-cont, .grid-padre-cont #wsp-cont .formulario-container .titulos-cont, .grid-padre-cont .formulario-container #horarios-cont .titulos-cont, .grid-padre-cont #horarios-cont .formulario-container .titulos-cont {
+      text-align: center; }
+    .grid-padre-cont .formulario-container form .center-form-items .boton-enviar {
+      padding: 20px 10vw; }
+    .grid-padre-cont .formulario-container form .center-form-items .boton-reestablecer {
+      padding: 20px 10vw; }
+    .grid-padre-cont #horarios-cont .titulos-cont {
+      text-align: center; }
+    .grid-padre-cont #horarios-cont p {
+      text-align: center; }
+    .grid-padre-cont #wsp-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .grid-padre-cont #wsp-cont .titulos-cont {
+        text-align: center; } }
+
+@media (max-width: 576px) {
+  /* Foto de los encabezados + título en los mains */
+  .encabezado {
+    padding-top: 114px; }
+    .encabezado .titulo-encabezado {
+      padding-top: 114px; }
+  /*     ////     */
+  .grid-padre-cont .formulario-container form .center-form-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline; }
+    .grid-padre-cont .formulario-container form .center-form-items .input-corto {
+      width: 100%; }
+    .grid-padre-cont .formulario-container form .center-form-items .boton-enviar {
+      width: 100%;
+      margin-bottom: 5px; }
+    .grid-padre-cont .formulario-container form .center-form-items .boton-reestablecer {
+      width: 100%; } }
+
+/* COLOR */
+/* SOMBRA */
+/* TRANSICIÓN */
+/* EXTEND */
+/* CONTACTO */
+.titulos-cont, .grid-padre-cont .formulario-container .titulos-cont, .grid-padre-cont #wsp-cont .titulos-cont, .grid-padre-cont #horarios-cont .titulos-cont {
+  font-weight: 400;
+  color: #242424;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+/* MIXIN */
+/* CONTACTO */
 .footer-color {
   background-color: #202020; }
   .footer-color .footer-organizacion {
