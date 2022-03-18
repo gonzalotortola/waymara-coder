@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Poppins', sans-serif;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+@import "header.scss";
+
+@import "index.scss";
+
+@import "cosmetica.scss";
+
+@import "catalogo.scss";
+
+@import "quienes-somos.scss";
+
+@import "contacto.scss";
+
+@import "footer.scss";
+
+

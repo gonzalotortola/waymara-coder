@@ -1,0 +1,98 @@
+@import "variables.scss";
+
+main {
+
+    .container {
+    
+        .row {
+
+            margin-bottom: 50px;
+    
+            div {
+    
+                .card {
+                    border-radius: 0;
+                    align-items: center;
+                    margin-top: 25px;
+    
+                    &:hover {
+                        cursor: pointer;
+                        box-shadow: $sombra-2;
+                        transition: $transicion-rapida;
+                    }
+    
+                    img {
+                        vertical-align: middle;
+                        text-align: center;
+                        object-fit: fill;
+                        transition: all 1s ease;
+    
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+    
+                        &:hover {
+                            cursor: pointer;
+                            width: 105%;
+                        }
+                    }
+    
+                    .card-body {
+    
+                        .card-title {
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 600;
+                        }
+    
+                        .card-text {
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+    
+                        .btn {
+                            font-weight: 400;
+                            font-size: 14px;
+                            border-radius: 0;
+                        }
+    
+                        .btn-primary {
+                            color: $blanco;
+                            background-color: $naranja;
+                            border-color: $naranja;
+                            font-family: 'Poppins', sans-serif;
+                            width: 100%;
+                            margin-top: 15px;
+    
+                            &:hover {
+                                background-color: $naranja-hover-oscuro;
+                                border-color: $naranja-hover-oscuro;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+
+    main {
+
+        .container {
+            padding-top: 155px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    main {
+
+        .container {
+            padding-top: 155px;
+        }
+    }
+}
