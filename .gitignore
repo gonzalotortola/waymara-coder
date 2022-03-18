@@ -1,2 +1,4 @@
 node_modules/
 css/style-ultimo.css
+package.json
+package-lock.json
