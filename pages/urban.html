@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Urban by Waymara</title>
     <meta name="keywords" content="tucuman, indumentaria, waymara, ropa, urbana, argentina, catalogo, urban, remera, pantalon, legging, camisa, camisola, vestido">
@@ -40,7 +43,7 @@
 
                 <div class=logoHeader>
                     <a
-                    href="../index.html"> <img id=logoHeader src="../assets/img/SVG/logo-h-waymara.svg" alt="Waymara" title="Waymara Argentina">
+                    href="../index.html"> <img id=logoHeader src="../assets/img/SVG/logo-h-waymara.svg" alt="Logo horizontal Waymara" title="Waymara Argentina">
                     </a>
                 </div>
 
@@ -83,11 +86,11 @@
                     </nav>
                    
                     <a href="../index.html" id="logo-h-waymara">
-                        <img id=logoHeader src="../assets/img/SVG/logo-h-waymara.svg" alt="Waymara" title="Waymara Argentina">
+                        <img id=logoHeader src="../assets/img/SVG/logo-h-waymara.svg" alt="logo horizontal Waymara" title="Waymara Argentina">
                     </a>
 
                     <a href="../index.html" id="icono-waymara">
-                        <img id=iconHeader src="../assets/img/SVG/icono-waymara.svg" alt="Waymara" title="Waymara Argentina">
+                        <img id=iconHeader src="../assets/img/SVG/icono-waymara.svg" alt="icono Waymara" title="Waymara Argentina">
                     </a>
 
                     <nav class=navHeader--responsive>
@@ -111,7 +114,7 @@
                 <nav class="mainNav__bar">
                     <ul  class="mainNav__container" id="menu">
                         <li class="dropdown">
-                            <a class="dropdown-link" href="indumentaria.html">Indumentaria</a>
+                            <p class="dropdown-link">Indumentaria</a>
                             <ul class="dropdown-content">
                                 <a href="urban.html">Urban</a>
                                 <a href="energy-life.html">Energy Life</a>
@@ -130,7 +133,7 @@
         </div>
 
         <div class="ruta-qs">
-            <p> <a href="../index.html">WAYMARA</a> / <a href="indumentaria.html">INDUMENTARIA</a> / <span>URBAN</span></p>
+            <p> <a href="../index.html">WAYMARA</a> / <a>INDUMENTARIA</a> / <span>URBAN</span></p>
         </div>
     </header>
     <!-- fin header -->
@@ -158,10 +161,611 @@
 
     <main>
 
+        <div class="encabezado">
+            <div class="div-imagen">
+                <img class="foto-encabezado" src="../assets/img/encabezados/Urban-encabezado.png" alt="Urban de Waymara, ropa que marca tendencia">
+            </div>
+        </div>
+        
+        <div class="encabezado-responsive">
+            <div class="div-imagen">
+                <img class="foto-encabezado" src="../assets/img/encabezados/Urban-encabezado-responsive.png" alt="Urban de Waymara, ropa que marca tendencia">
+            </div>
+        </div>
+
+        <div class="main-productos">
+            <div class="grid-productos">
+                <div class="grid-filtro">
+                    <div class="titulo-filtro">
+                        <p>Filtrar búsqueda por:</p>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Tipo de prenda    
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <form>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="remera">
+                                            <span class="form-check-label">
+                                                Remera
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="remeron">
+                                            <span class="form-check-label">
+                                                Remerón
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="camisola">
+                                            <span class="form-check-label">
+                                                Camisola
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="musculosa">
+                                            <span class="form-check-label">
+                                                Musculosa
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="buzo">
+                                            <span class="form-check-label">
+                                                Buzo
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="vestido">
+                                            <span class="form-check-label">
+                                                Vestido
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="pantalon">
+                                            <span class="form-check-label">
+                                                Pantalón
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="short">
+                                            <span class="form-check-label">
+                                                Short
+                                            </span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        Talle
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <form>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="0">
+                                            <span class="form-check-label">
+                                                0
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="1">
+                                            <span class="form-check-label">
+                                                1
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="2">
+                                            <span class="form-check-label">
+                                                2
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="3">
+                                            <span class="form-check-label">
+                                                3
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="4">
+                                            <span class="form-check-label">
+                                                4
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="5">
+                                            <span class="form-check-label">
+                                                5
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="6">
+                                            <span class="form-check-label">
+                                                6
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="7">
+                                            <span class="form-check-label">
+                                                Único
+                                            </span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        Color
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                    <form>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="coral">
+                                            <span class="form-check-label">
+                                                Coral
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="azul">
+                                            <span class="form-check-label">
+                                                Azul
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="fuchsia">
+                                            <span class="form-check-label">
+                                                Fuchsia
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="blanco">
+                                            <span class="form-check-label">
+                                                Blanco
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="negro">
+                                            <span class="form-check-label">
+                                                Negro
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="nude">
+                                            <span class="form-check-label">
+                                                Nude
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="amarillo">
+                                            <span class="form-check-label">
+                                                Amarillo
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="rojo">
+                                            <span class="form-check-label">
+                                                Rojo
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="naranja">
+                                            <span class="form-check-label">
+                                                Naranja
+                                            </span>
+                                        </label>
+                                        <label class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="marron">
+                                            <span class="form-check-label">
+                                                Marrón
+                                            </span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
+
+                <div class="filtros-responsive">
+
+                    <div class="ordenarPor-responsive">
+                        <select class="form-select" aria-label=".form-select">
+                            <option value="none" selected disabled>
+                                Ordenar por:
+                            </option>
+                            <option selected>Relevancia</option>
+                            <option value="1">Mejor calificados</option>
+                            <option value="2">Nombre A-Z</option>
+                            <option value="3">Nombre Z-A</option>
+                          </select>
+                    </div>
+
+                    <div class="filter-responsive">
+                        <p>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Filtrar búsqueda por
+    
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <div class="container-fluid">
+                                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                    Tipo de prenda    
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                                <form>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="remera">
+                                                        <span class="form-check-label">
+                                                            Remera
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="remeron">
+                                                        <span class="form-check-label">
+                                                            Remerón
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="camisola">
+                                                        <span class="form-check-label">
+                                                            Camisola
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="musculosa">
+                                                        <span class="form-check-label">
+                                                            Musculosa
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="buzo">
+                                                        <span class="form-check-label">
+                                                            Buzo
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="vestido">
+                                                        <span class="form-check-label">
+                                                            Vestido
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="pantalon">
+                                                        <span class="form-check-label">
+                                                            Pantalón
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="short">
+                                                        <span class="form-check-label">
+                                                            Short
+                                                        </span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                    Talle
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                                <form>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="0">
+                                                        <span class="form-check-label">
+                                                            0
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="1">
+                                                        <span class="form-check-label">
+                                                            1
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="2">
+                                                        <span class="form-check-label">
+                                                            2
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="3">
+                                                        <span class="form-check-label">
+                                                            3
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="4">
+                                                        <span class="form-check-label">
+                                                            4
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="5">
+                                                        <span class="form-check-label">
+                                                            5
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="6">
+                                                        <span class="form-check-label">
+                                                            6
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="7">
+                                                        <span class="form-check-label">
+                                                            Único
+                                                        </span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                    Color
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                                <form>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="coral">
+                                                        <span class="form-check-label">
+                                                            Coral
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="azul">
+                                                        <span class="form-check-label">
+                                                            Azul
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="fuchsia">
+                                                        <span class="form-check-label">
+                                                            Fuchsia
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="blanco">
+                                                        <span class="form-check-label">
+                                                            Blanco
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="negro">
+                                                        <span class="form-check-label">
+                                                            Negro
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="nude">
+                                                        <span class="form-check-label">
+                                                            Nude
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="amarillo">
+                                                        <span class="form-check-label">
+                                                            Amarillo
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="rojo">
+                                                        <span class="form-check-label">
+                                                            Rojo
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="naranja">
+                                                        <span class="form-check-label">
+                                                            Naranja
+                                                        </span>
+                                                    </label>
+                                                    <label class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="marron">
+                                                        <span class="form-check-label">
+                                                            Marrón
+                                                        </span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-items">
+                    
+                    <div class="selector-ordenarPor">
+                        <p>Ordenar por</p>
+                        <select class="form-select" aria-label=".form-select">
+                            <option selected>Relevancia</option>
+                            <option value="1">Mejor calificados</option>
+                            <option value="2">Nombre A-Z</option>
+                            <option value="3">Nombre Z-A</option>
+                          </select>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-1.png" class="card-img-top" alt="Camisola Oasis con estampado blanco y negro">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Camisola Oasis</h5>
+                                      <p class="card-text">Modelo amplio. Mangas 3/4 con tajo. Seda fina importada. Estampado tipo distorsión.<br>TALLES 3 Y 4.</p>
+                                      <p class="price">$3.899</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-2.png" class="card-img-top" alt="Remerón Celestina de color azul">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Remerón Celestina</h5>
+                                      <p class="card-text">Línea amplia. Con detalles tajo a los costados con vuelo. Piquet de algodón azul francia.<br>TALLES 1 AL 4.</p>
+                                      <p class="price">$4.299</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-3.png" class="card-img-top" alt="Remerón Waymara en color marrón de full print">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Remerón Waymara</h5>
+                                      <p class="card-text">Remera manga larga. Modelo amplio. Microfibra sublimada. Full print ESPECIAL.<br>TALLES 2 AL 6.</p>
+                                      <p class="price">$2.799</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-4.png" class="card-img-top" alt="Remera Sally en color naranja pastel">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Remera Sally</h5>
+                                      <p class="card-text">Mangas 3/4. Hombro caído. Escote en V. Jersey flame. Cómoda y versátil.<br>TALLES 2 AL 5.</p>
+                                      <p class="price">$1.999</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-5.png" class="card-img-top" alt="Remera Rachel en blanco con detalles en negro">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Remera Rachel</h5>
+                                      <p class="card-text">Jersey flame. Blanco con rayas lateral negro. Modelo comfie, amplio.<br>TALLES 1 AL 4.</p>
+                                      <p class="price">$2.399</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-6.png" class="card-img-top" alt="Remera Zia en color amarillo limón">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Remera Zia</h5>
+                                      <p class="card-text">Remera en crepe de poul. Modelo amplio. Color amarillo limón.<br>TALLES 1 AL 4.</p>
+                                      <p class="price">$2.799</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-7.png" class="card-img-top" alt="Short Gianna en color pastel y detalles cromados">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Short Gianna</h5>
+                                      <p class="card-text">Pantalón corto. Cintura alta con elástico. Cinturón con hebilla de metal. Tela Creppe Crash.<br>TALLES 1 AL 3.</p>
+                                      <p class="price">$3.499</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-8.png" class="card-img-top" alt="Remera Alyn en color azul con sisas y volados">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Remera Alyn</h5>
+                                      <p class="card-text">Jersey acanalado con sisas y cintura con volados. También disponible en otros colores.<br>TALLE ÚNICO.</p>
+                                      <p class="price">$1.999</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                                    <img src="../assets/img/urban/Urban-9.png" class="card-img-top" alt="Buzo Melany de hilo en color bordeaux">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Buzo Melany</h5>
+                                      <p class="card-text">Remera manga larga. Morley con spandex. Canales anchos, modelo amplio.<br>TALLES 2 AL 5. </p>
+                                      <p class="price">$3.599</p>
+                                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mas-btn">
+                        <a href="#">
+                            Cargar más
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="grid-descripcion">
+                <div class="descripcion1-grid" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="500">
+                    <h3 class="descripcion-grid--titulo">MÁS QUE ELEGANCIA</h3>
+                    <p class="descripcion-grid--parrafo">Buscamos la combinación ideal para lograr prendas accesibles, de calidad premium y a la moda, marcando la tendencia urbana del momento. ¡Prendas de boutique al mejor precio! Contamos con una gran variedad de prendas: remeras, remerones, vestidos, pantalones, shorts y camisolas de todos los estilos para todos los talles, porque lucir única y a la moda ahora es posible con Waymara.</p>
+                </div>
+
+                <div class="descripcion2-grid" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="500">
+                    <h3 class="descripcion-grid--titulo">MÁS QUE TELAS PREMIUM</h3>
+                    <p class="descripcion-grid--parrafo">Costuras planas y reforzadas: microfibras de moderada elasticidad, opaco, composición: 86,5% poliéster y 13,5% Lycra®. Acabado semi mate. Textura lisa y suave. Sedificada: brillo full color.<br>Múltiples talles: del 0 al 6 (XS a XXL) y todo tipo de encajes: ajustados, holgados y amplios.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
 	<!-- inicio footer rs -->
     <footer class="footer-rs">
+
+        <div class="footer-badges">
+
+            <div class="flex-badges">
+                <p>Productos 100% sustentables<span>Estamos comprometidos con nuestro mundo</span></p>
+
+                <div class="container">
+    
+                    <div class="row">
+                        <img src="../assets/img/SVG/footer/SVG/cruelty-free.svg" alt="Productos no testeados en animales">
+                        <img src="../assets/img/SVG/footer/SVG/vegan.svg" alt="Productos 100% veganos">
+                        <img src="../assets/img/SVG/footer/SVG/bio.svg" alt="Productos biodegradables">
+                        <img src="../assets/img/SVG/footer/SVG/hypoallergenic.svg" alt="Formulas seguras e hipoalergenicas">
+                        <img src="../assets/img/SVG/footer/SVG/paraben-free.svg" alt="Productos libres de parabenos">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <nav class="footerNav">
 
@@ -230,6 +834,24 @@
     <!-- inicio footer -->
     <footer class="footer-color">
 
+        <div class="footer-badges">
+
+            <div class="flex-badges">
+                <p>Productos 100% sustentables<span>Estamos comprometidos con nuestro mundo</span></p>
+
+                <div class="container">
+    
+                    <div class="row">
+                        <img src="../assets/img/SVG/footer/SVG/cruelty-free.svg" alt="Productos no testeados en animales">
+                        <img src="../assets/img/SVG/footer/SVG/vegan.svg" alt="Productos 100% veganos">
+                        <img src="../assets/img/SVG/footer/SVG/bio.svg" alt="Productos biodegradables">
+                        <img src="../assets/img/SVG/footer/SVG/hypoallergenic.svg" alt="Formulas seguras e hipoalergenicas">
+                        <img src="../assets/img/SVG/footer/SVG/paraben-free.svg" alt="Productos libres de parabenos">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav class="footer-organizacion">
             <ul class="contenedor-footer-nav">
                     <li class="elemento">
@@ -238,7 +860,7 @@
                         </h5>
                         <ul>
                             <li class="link">
-                                <a href="indumentaria.html">Indumentaria</a>
+                                <a>Indumentaria</a>
                                 <ul>
                                     <li class="sub-link"><a href="urban.html">Urban</a></li>
                                     <li class="sub-link"><a href="energy-life.html">Energy Life</a></li>

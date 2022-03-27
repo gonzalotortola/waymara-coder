@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Waymara Argentina</title>
     <meta name="keywords" content="tucuman, cosmetica, perfume, perfumes, indumentaria, waymara, ropa, deportiva, urbana, crema, corporal, argentina, catalogo, esmalte, bodysplash">
@@ -103,7 +104,6 @@
                         </ul>
                     </nav>
                 </div>
-
             </div>
 
         <!-- /fin Main Header responsive -->
@@ -113,7 +113,7 @@
                 <nav class="mainNav__bar">
                     <ul  class="mainNav__container" id="menu">
                         <li class="dropdown">
-                            <a class="dropdown-link" href="pages/indumentaria.html">Indumentaria</a>
+                            <p class="dropdown-link">Indumentaria</p>
                             <ul class="dropdown-content">
                                 <a href="pages/urban.html">Urban</a>
                                 <a href="pages/energy-life.html">Energy Life</a>
@@ -129,10 +129,6 @@
                     </ul>
                 </nav>
             </div>
-
-
-
-
         </div>
     </header>
     <!-- fin header -->
@@ -216,46 +212,90 @@
                     Lo último
                 </h2>
             </div>
-            <div id="hijo1-index" class="producto" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
-                <img src="assets/img/index/esmalte1.JPG" alt="esmalte1">
-                <h4>Esmalte 1</h4>
-                <p>Este producto está en oferta de lanzamiento</p>
-                <button>Añadir al carrito <link rel="Añadir al carrito" href="#"></button>
+            <div id="hijo1-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+                <div class="card" style="width: 18rem;">
+                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                    <img src="assets/img/urban/Urban-2.png" class="card-img-top" alt="Remerón Celestina de color azul">
+                    <div class="card-body">
+                      <h5 class="card-title">Remerón Celestina</h5>
+                      <p class="card-text">Línea amplia. Con detalles tajo a los costados con vuelo. Piquet de algodón azul francia.<br>TALLES 1 AL 4.</p>
+                      <p class="price">$4.299</p>
+                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                    </div>
+                </div>
             </div>
-            <div id="hijo2-index" class="producto" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="200">
-                <img src="assets/img/index/esmalte1.JPG" alt="esmalte2">
-                <h4>Esmalte 2</h4>
-                <p>Este producto está en oferta de lanzamiento</p>
-                <button>Añadir al carrito <link rel="Añadir al carrito" href="#"></button>
+            <div id="hijo2-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="200">
+                <div class="card" style="width: 18rem;">
+                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                    <img src="assets/img/energy/Energy-9.png" class="card-img-top" alt="Conjunto deportivo Mora de ecoprint berlain importado">
+                    <div class="card-body">
+                      <h5 class="card-title">Conjunto Mora</h5>
+                      <p class="card-text">Conjunto deportivo Biker + Top en tela laguna estampada, ecoprint berlain importado.<br>TALLES 1 AL 4.</p>
+                      <p class="price">$6.899</p>
+                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                    </div>
+                </div>
             </div>
-            <div id="hijo3-index" class="producto" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="300">
-                <img src="assets/img/index/esmalte1.JPG" alt="esmalte3">
-                <h4>Esmalte 3</h4>
-                <p>Este producto está en oferta de lanzamiento</p>
-                <button>Añadir al carrito <link rel="Añadir al carrito" href="#"></button>
+            <div id="hijo3-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="300">
+                <div class="card" style="width: 18rem;">
+                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                    <img src="../assets/img/urban/Urban-4.png" class="card-img-top" alt="Remera Sally en color naranja pastel">
+                    <div class="card-body">
+                      <h5 class="card-title">Remera Sally</h5>
+                      <p class="card-text">Mangas 3/4. Hombro caído. Escote en V. Jersey flame. Cómoda y versátil.<br>TALLES 2 AL 5.</p>
+                      <p class="price">$1.999</p>
+                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                    </div>
+                </div>
             </div>
             <div id="hijo4-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="400">
                 <h2 class="titulo-destacados">
                     Top del mes
                 </h2>
             </div>
-            <div id="hijo5-index" class="producto" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="200">
-                <img src="assets/img/index/esmalte1.JPG" alt="esmalte4">
-                <h4>Esmalte 4</h4>
-                <p>Este producto está en oferta de lanzamiento</p>
-                <button>Añadir al carrito <link rel="Añadir al carrito" href="#"></button>
+            <div id="hijo5-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="200">
+                <div class="card" style="width: 18rem;">
+                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                    <img src="assets/img/perfumes/Perfumes-8.png" class="card-img-top" alt="Eau de Toilette Red Seduction con aromas seductores">
+                    <div class="card-body">
+                      <h5 class="card-title">Red Seduction | Eau de Toilette</h5>
+                      <p class="card-text">125cc<br>Atrevidas notas de grosella roja y el exótico lichi y rosas. De base: vetiver y vainilla, proporcionan un acabado sorprendente.</p>
+                      <p class="price">$1.149</p>
+                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                    </div>
+                </div>
             </div>
-            <div id="hijo6-index" class="producto" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="300">
-                <img src="assets/img/index/esmalte1.JPG" alt="esmalte5">
-                <h4>Esmalte 5</h4>
-                <p>Este producto está en oferta de lanzamiento</p>
-                <button>Añadir al carrito <link rel="Añadir al carrito" href="#"></button>
+            <div id="hijo6-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="300">
+                <div class="card" style="width: 18rem;">
+                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                    <img src="assets/img/energy/Energy-3.png" class="card-img-top" alt="Conjunto deportivo Tina en color gris">
+                    <div class="card-body">
+                      <h5 class="card-title">Conjunto Tina</h5>
+                      <p class="card-text">Buzo y jogging de microfibra jaspeada en color gris melange, con detalles en negro.<br>TALLES 1 AL 4.</p>
+                      <p class="price">$8.299</p>
+                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                    </div>
+                </div>
             </div>
-            <div id="hijo7-index" class="producto" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="400">
-                <img src="assets/img/index/esmalte1.JPG" alt="esmalte6">
-                <h4>Esmalte 6</h4>
-                <p>Este producto está en oferta de lanzamiento</p>
-                <button>Añadir al carrito <link rel="Añadir al carrito" href="#"></button>
+            <div id="hijo7-index" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="400">
+                <div class="card" style="width: 18rem;">
+                    <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                    <img src="assets/img/perfumes/Perfumes-9.png" class="card-img-top" alt="Perfume de hogar de lavanda y verbena">
+                    <div class="card-body">
+                      <h5 class="card-title">Fragancias Home | Lavanda y Verbena</h5>
+                      <p class="card-text">250ml<br>Mejora el autoestima. Renueva las fuerzas. Equilibra las emociones.</p>
+                      <p class="price">$799</p>
+                      <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="index-catalogo">
+            <div class="flex-btn">
+                <a href="pages/catalogo.html" class=catalogo-btn>
+                    ¡Mirá nuestro catálogo!
+                </a>
             </div>
         </div>
 
@@ -263,6 +303,24 @@
     
     <!-- inicio footer -->
     <footer class="footer-color">
+
+        <div class="footer-badges">
+
+            <div class="flex-badges">
+                <p>Productos 100% sustentables<span>Estamos comprometidos con nuestro mundo</span></p>
+
+                <div class="container">
+    
+                    <div class="row">
+                        <img src="assets/img/SVG/footer/SVG/cruelty-free.svg" alt="Productos no testeados en animales">
+                        <img src="assets/img/SVG/footer/SVG/vegan.svg" alt="Productos 100% veganos">
+                        <img src="assets/img/SVG/footer/SVG/bio.svg" alt="Productos biodegradables">
+                        <img src="assets/img/SVG/footer/SVG/hypoallergenic.svg" alt="Formulas seguras e hipoalergenicas">
+                        <img src="assets/img/SVG/footer/SVG/paraben-free.svg" alt="Productos libres de parabenos">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <nav class="footer-organizacion">
             <ul class="contenedor-footer-nav">
@@ -272,7 +330,7 @@
                         </h5>
                         <ul>
                             <li class="link">
-                                <a href="pages/indumentaria.html">Indumentaria</a>
+                                <a>Indumentaria</a>
                                 <ul>
                                     <li class="sub-link"><a href="pages/urban.html">Urban</a></li>
                                     <li class="sub-link"><a href="pages/energy-life.html">Energy Life</a></li>
@@ -340,72 +398,90 @@
     </footer>
     <!-- fin footer --> 
 
-    	<!-- inicio footer rs -->
-        <footer class="footer-rs">
+    <!-- inicio footer rs -->
+    <footer class="footer-rs">
 
-            <nav class="footerNav">
+        <div class="footer-badges">
+
+            <div class="flex-badges">
+                <p>Productos 100% sustentables<span>Estamos comprometidos con nuestro mundo</span></p>
+
+                <div class="container">
     
-                <label for="touch-1"><span class="footerNav-titulo">Productos</span></label>               
-                <input type="checkbox" id="touch-1"> 
-              
-                <ul class="slide-1">
-                    <label for="touch-1b"><span class="footerNav-titulo-2">Indumentaria</span></label>               
-                    <input type="checkbox" id="touch-1b"> 
-                    <ul class="slide-1b">
-                        <li class="footerNav-item"><a href="pages/urban.html">Urban</a></li> 
-                        <li class="footerNav-item"><a href="pages/energy-life.html">Energy Life</a></li>
-                    </ul>
-                  <li class="footerNav-item"><a href="pages/cosmetica.html">Cosmética</a></li>
-                  <li class="footerNav-item"><a href="pages/perfumeria.html">Perfumería</a></li>
-                </ul>
-    
-                <label for="touch-2"><span class="footerNav-titulo">Sobre Waymara</span></label>               
-                <input type="checkbox" id="touch-2"> 
-              
-                <ul class="slide-2">
-                  <li class="footerNav-item"><a href="#">Nuestra historia</a></li> 
-                  <li class="footerNav-item"><a href="#">Compromiso sustentable</a></li>
-                  <li class="footerNav-item"><a href="#">Nuestros valores</a></li>
-                  <li class="footerNav-item"><a href="#">Carrera Empresarial</a></li>
-                </ul>
-    
-                <label for="touch-3"><span class="footerNav-titulo">Ayuda</span></label>               
-                <input type="checkbox" id="touch-3"> 
-              
-                <ul class="slide-3">
-                  <li class="footerNav-item"><a href="#">Guía de talles</a></li> 
-                  <li class="footerNav-item"><a href="#">Preguntas frecuentes</a></li>
-                  <li class="footerNav-item"><a href="#">Política de devoluciones</a></li>
-                  <li class="footerNav-item"><a href="#">Código corporativo de ética</a></li>
-                  <li class="footerNav-item"><a href="#">Códigos de producto</a></li>
-                </ul>
-              
-            </nav>
-                
-            <div id="redes-rs">
-                <ul class="contenedor-redes-rs">
-                    <li class="iconos-redes-rs"> <a href="https://instagram.com/waymara.arg/" target="_blank"> <i class='bx bxl-instagram'></i> </a> </li>
-                    <li class="iconos-redes-rs"> <a href="https://facebook.com/waymara.argentina/" target="_blank"> <i class='bx bxl-facebook-circle' ></i> </a> </li>
-                    <li class="iconos-redes-rs"> <a href="https://youtube.com/" target="_blank"> <i class='bx bxl-youtube' ></i> </a> </li>
-                    <li class="iconos-redes-rs"> <a href="https://wa.me/5493813150993" target="_blank"> <i class='bx bxl-whatsapp' ></i> </a> </li>
-                </ul>
+                    <div class="row">
+                        <img src="assets/img/SVG/footer/SVG/cruelty-free.svg" alt="Productos no testeados en animales">
+                        <img src="assets/img/SVG/footer/SVG/vegan.svg" alt="Productos 100% veganos">
+                        <img src="assets/img/SVG/footer/SVG/bio.svg" alt="Productos biodegradables">
+                        <img src="assets/img/SVG/footer/SVG/hypoallergenic.svg" alt="Formulas seguras e hipoalergenicas">
+                        <img src="assets/img/SVG/footer/SVG/paraben-free.svg" alt="Productos libres de parabenos">
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <nav class="footerNav">
+
+            <label for="touch-1"><span class="footerNav-titulo">Productos</span></label>               
+            <input type="checkbox" id="touch-1"> 
             
-            <div class="pie-rs">
-                <nav class="pie-contenedor-rs">
-                    <a href="">Términos y condiciones</a>
-                    <a href="">Política de privacidad</a>
-                    <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">Defensa al consumidor</a>
-                    <a href="">Botón de arrepentimiento</a>
-                </nav>
-            </div>
-    
-            <div class="copyright-rs">
-                <p> Diseñado por Gonzalo Tórtola</p>
-            </div>
-    
-        </footer>
-        <!-- fin footer rs -->
+            <ul class="slide-1">
+                <label for="touch-1b"><span class="footerNav-titulo-2">Indumentaria</span></label>               
+                <input type="checkbox" id="touch-1b"> 
+                <ul class="slide-1b">
+                    <li class="footerNav-item"><a href="pages/urban.html">Urban</a></li> 
+                    <li class="footerNav-item"><a href="pages/energy-life.html">Energy Life</a></li>
+                </ul>
+                <li class="footerNav-item"><a href="pages/cosmetica.html">Cosmética</a></li>
+                <li class="footerNav-item"><a href="pages/perfumeria.html">Perfumería</a></li>
+            </ul>
+
+            <label for="touch-2"><span class="footerNav-titulo">Sobre Waymara</span></label>               
+            <input type="checkbox" id="touch-2"> 
+            
+            <ul class="slide-2">
+                <li class="footerNav-item"><a href="#">Nuestra historia</a></li> 
+                <li class="footerNav-item"><a href="#">Compromiso sustentable</a></li>
+                <li class="footerNav-item"><a href="#">Nuestros valores</a></li>
+                <li class="footerNav-item"><a href="#">Carrera Empresarial</a></li>
+            </ul>
+
+            <label for="touch-3"><span class="footerNav-titulo">Ayuda</span></label>               
+            <input type="checkbox" id="touch-3"> 
+            
+            <ul class="slide-3">
+                <li class="footerNav-item"><a href="#">Guía de talles</a></li> 
+                <li class="footerNav-item"><a href="#">Preguntas frecuentes</a></li>
+                <li class="footerNav-item"><a href="#">Política de devoluciones</a></li>
+                <li class="footerNav-item"><a href="#">Código corporativo de ética</a></li>
+                <li class="footerNav-item"><a href="#">Códigos de producto</a></li>
+            </ul>
+            
+        </nav>
+            
+        <div id="redes-rs">
+            <ul class="contenedor-redes-rs">
+                <li class="iconos-redes-rs"> <a href="https://instagram.com/waymara.arg/" target="_blank"> <i class='bx bxl-instagram'></i> </a> </li>
+                <li class="iconos-redes-rs"> <a href="https://facebook.com/waymara.argentina/" target="_blank"> <i class='bx bxl-facebook-circle' ></i> </a> </li>
+                <li class="iconos-redes-rs"> <a href="https://youtube.com/" target="_blank"> <i class='bx bxl-youtube' ></i> </a> </li>
+                <li class="iconos-redes-rs"> <a href="https://wa.me/5493813150993" target="_blank"> <i class='bx bxl-whatsapp' ></i> </a> </li>
+            </ul>
+        </div>
+        
+        <div class="pie-rs">
+            <nav class="pie-contenedor-rs">
+                <a href="">Términos y condiciones</a>
+                <a href="">Política de privacidad</a>
+                <a href="https://www.argentina.gob.ar/produccion/defensadelconsumidor/formulario" target="_blank">Defensa al consumidor</a>
+                <a href="">Botón de arrepentimiento</a>
+            </nav>
+        </div>
+
+        <div class="copyright-rs">
+            <p> Diseñado por Gonzalo Tórtola</p>
+        </div>
+
+    </footer>
+    <!-- fin footer rs -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

@@ -1,0 +1,564 @@
+@import "variables.scss";
+
+main {
+
+    .main-productos {
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            grid-template-areas: "a1 a2";
+            column-gap: 20px;
+            row-gap: 50px;
+            margin: 25px 15% 50px 15%;
+            justify-content: center;
+
+            .filtros-responsive {
+                display: none;
+            }
+
+            .grid-filtro {
+                grid-area: a1;
+
+                margin-top: 28px;
+
+                .container-fluid {
+                    padding: 0;
+                    background-color: $blanco;
+
+                    .accordion {
+            
+                        .accordion-item {
+                            background-color: rgba(255, 255, 255, 0);
+                            border: 0;
+            
+                            .accordion-header {
+            
+                                h2 {
+                                    font-size: 13px;
+                                    margin: 0 0 0.5rem 1rem;
+                                }
+                            }
+                           
+                            .accordion-button {
+                                border-top-left-radius: 0;
+                                border-top-right-radius: 0;
+                                width: 250px;
+                
+                                &:not(.collapsed) {
+                                    color: $gris-oscuro;
+                                    background-color: $blanco;
+                                    box-shadow: none;
+                
+                                    &::after {
+                                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                                        color: $blanco;
+                                    }
+                                }
+                
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                            
+                            form {
+                                padding: 0rem 1rem 1rem 1rem;
+                                border-bottom: 1px solid $gris-claro;
+
+                                .form-check {
+                                    cursor: pointer;
+
+                                    .form-check-input {
+                                        border-radius: 0;
+
+                                        &:active, &:checked {
+                                            background-color: $naranja;  
+                                            border: $naranja;
+                                        }
+
+                                        &:focus {
+                                            box-shadow: none;
+                                            border-color: rgba(0,0,0,.25);
+                                        }
+                                    }
+
+                                    .form-check-label {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .titulo-filtro {
+                    font-size: 13px;
+                    margin: 0 0 0.5rem 1rem;
+                }
+            }
+
+            .grid-items {
+                grid-area: a2;
+
+                .selector-ordenarPor {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: auto;
+                    align-items: center;
+
+                    margin-bottom: 25px;
+
+                    p {
+                        font-size: 13px;
+                        margin: 0 0.5rem 0 1rem;
+                    }
+
+                    .form-select {
+                        border-radius: 0;
+                        width: auto;
+                        font-size: 13px;
+
+                        &:focus {
+                            box-shadow: none;
+                            border-color: rgba(0,0,0,.25);
+                        }
+                    }
+                }
+
+                .container {
+    
+                    .row {
+                
+                        div {
+
+                            .card {
+                                border-radius: 0;
+                                align-items: center;
+                                margin-bottom: 25px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                    box-shadow: $sombra-2;
+                                    transition: $transicion-rapida;
+                                }
+
+                                .bi {
+
+                                    &::before {
+                                        
+                                        &:hover {
+                                            color: $naranja;
+                                        }
+                                    }
+                                }
+                                .bi-heart {
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 12px;
+                                }
+                
+                                img {
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    object-fit: fill;
+                                    transition: $transicion-lenta;
+                
+                                    border-top-left-radius: 0;
+                                    border-top-right-radius: 0;
+                
+                                    &:hover {
+                                        cursor: pointer;
+                                        width: 105%;
+                                    }
+                                }
+                
+                                .card-body {
+                
+                                    .card-title {
+                                        font-family: 'Poppins', sans-serif;
+                                        font-weight: 600;
+                                    }
+                
+                                    .card-text {
+                                        font-family: 'Poppins', sans-serif;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                    }
+
+                                    .price {
+                                        padding-top: 10px;
+                                        font-size: 18px;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-weight: 500;
+                                        font-size: 18px;
+                                    }
+                
+                                    .btn {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        border-radius: 0;
+                                    }
+                
+                                    .btn-primary {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        color: $blanco;
+                                        background-color: $naranja;
+                                        border-color: $naranja;
+                                        font-family: 'Poppins', sans-serif;
+                                        margin-top: 15px;
+
+                                        &:hover {
+                                            background-color: $naranja-hover-oscuro;
+                                            border-color: $naranja-hover-oscuro;
+                                        }
+
+                                        &:focus {
+                                            box-shadow: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .mas-btn {
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 300px;
+                        height: 50px;
+                        margin: 50px auto auto auto;
+                        background-color: none;
+                        border: 1px solid $gris-oscuro;
+                        cursor: pointer;
+                        transition: $transicion-rapida;
+                        font-size: 16px;
+                        color: $gris-oscuro;
+                        font-weight: 400;
+                        line-height: 16px;
+                        text-decoration: none;
+                        text-align: center;
+            
+                        &:hover {
+                            background-color: $naranja;
+                            border: none;
+                            color: $blanco;
+                        }
+                    }
+                }
+            }
+        }
+
+        .grid-descripcion {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-template-areas: "b1 b2";
+            column-gap: 20px;
+            row-gap: 50px;
+            margin: 25px 15% 50px 15%;
+            justify-content: center;
+
+            .descripcion1-grid {
+                grid-area: b1;
+            }
+
+            .descripcion2-grid {
+                grid-area: b2;
+            }
+
+            .descripcion1-grid, .descripcion2-grid {
+                margin: 5%;
+
+                .descripcion-grid--titulo {
+                    font-size: 16px;
+                    color: $naranja;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                }
+                
+                .descripcion-grid--parrafo {
+                    font-size: 14px;
+                    color: $gris-oscuro;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    main {
+        padding-top: 155px;
+
+        .main-productos {
+
+            .grid-productos {
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+                grid-template-areas: "a1" "a2";
+    
+                .grid-filtro {
+                    display: none;                   
+                }
+
+                .filtros-responsive {
+                    display: inline-block;
+                    justify-content: space-between;
+                    grid-area: a1;
+                    width: 100vw;
+
+                    .filter-responsive {
+                        display: inline-block;
+    
+                        p {
+                            display: flex;
+                            width: 100vw;
+    
+                            .btn-primary {
+                                background-color: rgba(255, 255, 255, 0);
+                                border: 1px solid $gris-oscuro;
+                                color: $gris-oscuro;
+                                padding: 20px;
+                                margin: 0 15%;
+                                transition: $transicion-lenta;
+    
+                                &:focus {
+                                    box-shadow: none;
+                                    background-color: $blanco;
+                                }
+                            }
+    
+                            .collapsed {
+                                margin: 0 15%;
+                            }
+    
+                            .btn {
+                                border-radius: 0;
+
+                                svg {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .collapse, .collapsing, .show, .collapsed {
+    
+                            .card {
+                                width: 100vw;
+                            }
+                            .card-body {
+                                border-radius: 0;
+                                padding: 1rem 15%;
+                                box-shadow: $sombra-2;
+    
+                                .container-fluid {
+                                    padding: 0;
+                                    background-color: $blanco;
+                
+                                    .accordion {
+                            
+                                        .accordion-item {
+                                            background-color: rgba(255, 255, 255, 0);
+                                            border: 0;
+                            
+                                            .accordion-header {
+                            
+                                                h2 {
+                                                    font-size: 13px;
+                                                    margin: 0 0 0.5rem 1rem;
+                                                }
+                                            }
+                                           
+                                            .accordion-button {
+                                                border-top-left-radius: 0;
+                                                border-top-right-radius: 0;
+                                                width: 100%;
+                                                font-size: 1.2rem;
+                                                padding: 1rem 0 1.25rem 0;
+                                                                          
+                                                &:not(.collapsed) {
+                                                    color: $gris-oscuro;
+                                                    background-color: $blanco;
+                                                    box-shadow: none;
+                                
+                                                    &::after {
+                                                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                                                        color: $blanco;
+                                                    }
+                                                }
+                                
+                                                &:focus {
+                                                    box-shadow: none;
+                                                }
+                                            }
+                                            
+                                            form {
+                                                border-bottom: 1px solid $gris-claro;
+                
+                                                .form-check {
+                                                    cursor: pointer;
+                                                    padding: 0 0 1rem 1.5rem;
+                                                    display: flex;
+                                                    gap: 0.8rem;
+                                                    height: auto;
+                                                    align-items: center;
+                
+                                                    .form-check-input {
+                                                        border-radius: 0;
+                                                        width: 1.2em;
+                                                        height: 1.2em;
+                                                        margin-top: 0;
+                
+                                                        &:active, &:checked {
+                                                            background-color: $naranja;  
+                                                            border: $naranja;
+                                                        }
+                
+                                                        &:focus {
+                                                            box-shadow: none;
+                                                            border-color: rgba(0,0,0,.25);
+                                                        }
+                                                    }
+                
+                                                    .form-check-label {
+                                                        font-size: 16px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .ordenarPor-responsive {
+                    position: absolute;
+                    right: 15%;
+                    height: auto;
+
+                    .form-select {
+                        cursor: pointer;
+                        border-radius: 0;
+                        width: 210px;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        padding: 20px;
+                        border: 1px solid $gris-oscuro;
+                        color: $gris-oscuro;
+                        background-color: rgba(255, 255, 255, 0);
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+                        background-size: 16px 16px;
+                        background-position: right 1rem center;
+                        transition: $transicion-lenta;
+
+                        &:focus {
+                            box-shadow: none;
+                            background-color: $blanco;
+                        }
+
+                        &::placeholder {
+                            content: "Ordenar por";
+                        }
+                    }
+
+                }
+
+                .grid-items {
+                    grid-area: a2;
+    
+                    .selector-ordenarPor {
+                        display: none;
+                    }
+                }
+            }
+
+            .grid-descripcion {
+                grid-template-columns: auto;
+                grid-template-rows: auto auto;
+                grid-template-areas: "b1" "b2";
+                row-gap: 0;
+
+                .descripcion1-grid {
+                    grid-area: b1;
+                }
+
+                .descripcion2-grid {
+                    grid-area: b2;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    main {
+        padding-top: 155px;
+
+        .main-productos {
+
+            .grid-productos {
+    
+                .filtros-responsive {
+                    justify-content: space-between;
+
+                    .filter-responsive {
+    
+                        p {
+
+                            justify-content: space-around;
+
+                            .button-primary {
+                                margin: 0 25%;
+                            }
+
+                            .btn {
+                                margin: 0 25%;
+                            }
+ 
+                            .collapsed {
+                                margin: 0 25%;
+                            }
+                        }
+
+                        .collapse, .collapsing, .show, .collapsed {
+    
+                            .card-body {
+                                padding: 1rem 15%;
+                            }
+                        }
+                    }
+                }
+
+                .ordenarPor-responsive {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    right: 0%;
+                    height: auto;
+
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    main {
+        padding-top: 114px;
+    }
+}

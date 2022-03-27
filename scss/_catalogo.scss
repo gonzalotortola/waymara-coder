@@ -15,18 +15,19 @@
 
     #hijo0-cat {
         grid-area: a1;
-        margin-top: 50px;
-
-        h2 {
-            @extend .titulo-h2;
-        }
 
         article {
             
-            iframe {
+            #desktop {
                 margin-top: 25px;
-                height: 512px;
-                width: 362px;
+            }
+
+            #tablet {
+                display: none;
+            }
+
+            #mobile {
+                display: none;
             }
         }
     }   
@@ -70,6 +71,7 @@
     }
 
     .container-fluid {
+        margin-top: 25px;
         
         .row {
 
@@ -78,7 +80,7 @@
                 .card {
                     border-radius: 0;
                     align-items: center;
-                    margin-top: 25px;
+                    margin-bottom: 25px;
 
                     &:hover {
                         cursor: pointer;
@@ -86,51 +88,80 @@
                         transition: $transicion-rapida;
                     }
 
+                    .bi {
+
+                        &::before {
+                            
+                            &:hover {
+                                color: $naranja;
+                            }
+                        }
+                    }
+                    .bi-heart {
+                        position: absolute;
+                        right: 20px;
+                        top: 12px;
+                    }
+    
                     img {
                         vertical-align: middle;
                         text-align: center;
                         object-fit: fill;
-                        transition: all 1s ease;
-
+                        transition: $transicion-lenta;
+    
                         border-top-left-radius: 0;
                         border-top-right-radius: 0;
-
+    
                         &:hover {
                             cursor: pointer;
                             width: 105%;
                         }
                     }
-
+    
                     .card-body {
-
+    
                         .card-title {
                             font-family: 'Poppins', sans-serif;
                             font-weight: 600;
                         }
-
+    
                         .card-text {
                             font-family: 'Poppins', sans-serif;
                             font-weight: 400;
                             font-size: 14px;
                         }
 
+                        .price {
+                            padding-top: 10px;
+                            font-size: 18px;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+    
                         .btn {
                             font-weight: 400;
                             font-size: 14px;
                             border-radius: 0;
                         }
-
+    
                         .btn-primary {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                             color: $blanco;
                             background-color: $naranja;
                             border-color: $naranja;
                             font-family: 'Poppins', sans-serif;
-                            width: 100%;
                             margin-top: 15px;
 
                             &:hover {
                                 background-color: $naranja-hover-oscuro;
                                 border-color: $naranja-hover-oscuro;
+                            }
+
+                            &:focus {
+                                box-shadow: none;
                             }
                         }
                     }
@@ -143,16 +174,54 @@
 @media (max-width: 1024px) {
 
     .grid-padre-cat {
-        padding-top: 156px;
         grid-template-columns: 100%;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "a1" "b1" "c1" "d1";
+
+        #hijo0-cat {
+
+            article {
+
+                #desktop {
+                    display: none;
+                }
+
+                #tablet {
+                    margin-top: 25px;
+                    display: inline-block;
+                }
+    
+                #mobile {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 576px) {
 
     .grid-padre-cat {
+
+        #hijo0-cat {
+
+            article {
+
+                #desktop {
+                    display: none;
+                }
+
+                #tablet {
+                    display: none;
+                }
+    
+                #mobile {
+                    margin-top: 25px;
+                    display: inline-block;
+                }
+
+            }
+        }
 
         #hijo2-cat, #hijo3-cat {
 

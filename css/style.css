@@ -38,7 +38,7 @@ p {
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -157,7 +157,8 @@ p {
             color: #000000;
             margin: 0 10px 0 10px;
             display: inline-block;
-            position: relative; }
+            position: relative;
+            cursor: pointer; }
             .stickyHeader .navBar .mainNav__bar .mainNav__container .dropdown .dropdown-link:hover {
               color: #313131; }
               .stickyHeader .navBar .mainNav__bar .mainNav__container .dropdown .dropdown-link:hover::after {
@@ -518,12 +519,91 @@ p {
     margin-left: 10vw;
     transition: all 0.2s ease; } }
 
+.encabezado-responsive {
+  display: none; }
+
+.encabezado {
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: initial;
+  padding-right: initial; }
+  .encabezado .foto-encabezado {
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    max-width: none;
+    width: 100vw;
+    height: auto;
+    max-height: 600px; }
+  .encabezado .titulo-encabezado {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: initial;
+    width: 100%;
+    margin: auto; }
+    .encabezado .titulo-encabezado h1 {
+      text-align: center;
+      font-size: calc(15px + 3vw);
+      color: #fff;
+      font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .encabezado {
+    display: none; }
+  .encabezado-responsive {
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: initial;
+    padding-right: initial; }
+    .encabezado-responsive .foto-encabezado {
+      display: block;
+      object-fit: cover;
+      object-position: top;
+      max-width: none;
+      width: 100vw;
+      height: auto;
+      max-height: 600px; }
+    .encabezado-responsive .titulo-encabezado {
+      padding-top: 155px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: initial;
+      width: 100%;
+      margin: auto; }
+      .encabezado-responsive .titulo-encabezado h1 {
+        margin-bottom: 8rem;
+        text-align: center;
+        font-size: calc(15px + 3vw);
+        color: #fff;
+        font-weight: 600; } }
+
+@media (max-width: 576px) {
+  main .encabezado-responsive .titulo-encabezado {
+    padding-top: 114px; }
+    main .encabezado-responsive .titulo-encabezado h1 {
+      margin-bottom: 6.5rem; } }
+
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -547,10 +627,10 @@ p {
 .grid-index {
   margin: 0% 15% 50px 15%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 300px 50px 300px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px auto 50px auto;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   column-gap: 30px;
   row-gap: 20px;
   grid-template-areas: "a1 a1 a1" "b1 b2 b3" "c1 c1 c1" "d1 d2 d3"; }
@@ -576,6 +656,61 @@ p {
     font-weight: 600;
     color: #ff9900;
     font-family: 'Poppins', sans-serif; }
+  .grid-index #hijo1-index .card, .grid-index #hijo2-index .card, .grid-index #hijo3-index .card, .grid-index #hijo5-index .card, .grid-index #hijo6-index .card, .grid-index #hijo7-index .card {
+    border-radius: 0;
+    align-items: center;
+    margin-bottom: 25px; }
+    .grid-index #hijo1-index .card:hover, .grid-index #hijo2-index .card:hover, .grid-index #hijo3-index .card:hover, .grid-index #hijo5-index .card:hover, .grid-index #hijo6-index .card:hover, .grid-index #hijo7-index .card:hover {
+      cursor: pointer;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease; }
+    .grid-index #hijo1-index .card .bi::before:hover, .grid-index #hijo2-index .card .bi::before:hover, .grid-index #hijo3-index .card .bi::before:hover, .grid-index #hijo5-index .card .bi::before:hover, .grid-index #hijo6-index .card .bi::before:hover, .grid-index #hijo7-index .card .bi::before:hover {
+      color: #ff9900; }
+    .grid-index #hijo1-index .card .bi-heart, .grid-index #hijo2-index .card .bi-heart, .grid-index #hijo3-index .card .bi-heart, .grid-index #hijo5-index .card .bi-heart, .grid-index #hijo6-index .card .bi-heart, .grid-index #hijo7-index .card .bi-heart {
+      position: absolute;
+      right: 20px;
+      top: 12px; }
+    .grid-index #hijo1-index .card img, .grid-index #hijo2-index .card img, .grid-index #hijo3-index .card img, .grid-index #hijo5-index .card img, .grid-index #hijo6-index .card img, .grid-index #hijo7-index .card img {
+      vertical-align: middle;
+      text-align: center;
+      object-fit: fill;
+      transition: all 0.5s ease;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+      .grid-index #hijo1-index .card img:hover, .grid-index #hijo2-index .card img:hover, .grid-index #hijo3-index .card img:hover, .grid-index #hijo5-index .card img:hover, .grid-index #hijo6-index .card img:hover, .grid-index #hijo7-index .card img:hover {
+        cursor: pointer;
+        width: 105%; }
+    .grid-index #hijo1-index .card .card-body .card-title, .grid-index #hijo2-index .card .card-body .card-title, .grid-index #hijo3-index .card .card-body .card-title, .grid-index #hijo5-index .card .card-body .card-title, .grid-index #hijo6-index .card .card-body .card-title, .grid-index #hijo7-index .card .card-body .card-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600; }
+    .grid-index #hijo1-index .card .card-body .card-text, .grid-index #hijo2-index .card .card-body .card-text, .grid-index #hijo3-index .card .card-body .card-text, .grid-index #hijo5-index .card .card-body .card-text, .grid-index #hijo6-index .card .card-body .card-text, .grid-index #hijo7-index .card .card-body .card-text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: 14px; }
+    .grid-index #hijo1-index .card .card-body .price, .grid-index #hijo2-index .card .card-body .price, .grid-index #hijo3-index .card .card-body .price, .grid-index #hijo5-index .card .card-body .price, .grid-index #hijo6-index .card .card-body .price, .grid-index #hijo7-index .card .card-body .price {
+      padding-top: 10px;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 18px; }
+    .grid-index #hijo1-index .card .card-body .btn, .grid-index #hijo2-index .card .card-body .btn, .grid-index #hijo3-index .card .card-body .btn, .grid-index #hijo5-index .card .card-body .btn, .grid-index #hijo6-index .card .card-body .btn, .grid-index #hijo7-index .card .card-body .btn {
+      font-weight: 400;
+      font-size: 14px;
+      border-radius: 0; }
+    .grid-index #hijo1-index .card .card-body .btn-primary, .grid-index #hijo2-index .card .card-body .btn-primary, .grid-index #hijo3-index .card .card-body .btn-primary, .grid-index #hijo5-index .card .card-body .btn-primary, .grid-index #hijo6-index .card .card-body .btn-primary, .grid-index #hijo7-index .card .card-body .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background-color: #ff9900;
+      border-color: #ff9900;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 15px; }
+      .grid-index #hijo1-index .card .card-body .btn-primary:hover, .grid-index #hijo2-index .card .card-body .btn-primary:hover, .grid-index #hijo3-index .card .card-body .btn-primary:hover, .grid-index #hijo5-index .card .card-body .btn-primary:hover, .grid-index #hijo6-index .card .card-body .btn-primary:hover, .grid-index #hijo7-index .card .card-body .btn-primary:hover {
+        background-color: #975b00;
+        border-color: #975b00; }
+      .grid-index #hijo1-index .card .card-body .btn-primary:focus, .grid-index #hijo2-index .card .card-body .btn-primary:focus, .grid-index #hijo3-index .card .card-body .btn-primary:focus, .grid-index #hijo5-index .card .card-body .btn-primary:focus, .grid-index #hijo6-index .card .card-body .btn-primary:focus, .grid-index #hijo7-index .card .card-body .btn-primary:focus {
+        box-shadow: none; }
   .grid-index .producto {
     width: 200px;
     height: max-content;
@@ -629,32 +764,66 @@ p {
       .grid-index .producto button:hover {
         background-color: #975b00; }
 
+.index-catalogo .flex-btn {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-image: url("../assets/img/index/index-catalogo-desk.png");
+  background-repeat: no-repeat; }
+  .index-catalogo .flex-btn .catalogo-btn {
+    background-color: #ff9900;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+    margin-bottom: 50px;
+    text-decoration: none; }
+    .index-catalogo .flex-btn .catalogo-btn:hover {
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+      color: #ff9900;
+      background-color: #fff;
+      transform: translateY(-5px); }
+
 @media (max-width: 1024px) {
   #carousel-mobile {
     display: none; }
-  .carousel {
-    margin-top: 155px; }
-    .carousel .carousel-control-prev, .carousel .carousel-control-next {
-      margin: 0; }
+  .carousel .carousel-control-prev, .carousel .carousel-control-next {
+    margin: 0; }
   .grid-index {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 300px 300px 300px 50px 300px 300px 300px;
-    grid-template-areas: "a1" "b1" "b2" "b3" "c1" "d1" "d2" "d3"; } }
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto auto 50px auto auto auto;
+    grid-template-areas: "a1" "b1" "b2" "b3" "c1" "d1" "d2" "d3"; }
+  .index-catalogo .flex-btn {
+    background-image: url("../assets/img/index/index-catalogo-rs.png");
+    align-items: center; }
+    .index-catalogo .flex-btn .catalogo-btn {
+      margin-bottom: 0px; } }
 
 @media (max-width: 576px) {
   #carousel-desk {
     display: none; }
   #carousel-mobile {
-    display: block; }
-  .carousel {
-    margin-top: 114px; } }
+    display: block; } }
 
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -669,62 +838,339 @@ p {
 
 /* MIXIN */
 /* CONTACTO */
-main .container .row {
-  margin-bottom: 50px; }
-  main .container .row div .card {
-    border-radius: 0;
-    align-items: center;
-    margin-top: 25px; }
-    main .container .row div .card:hover {
-      cursor: pointer;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
-      transition: all 0.2s ease; }
-    main .container .row div .card img {
-      vertical-align: middle;
-      text-align: center;
-      object-fit: fill;
-      transition: all 1s ease;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0; }
-      main .container .row div .card img:hover {
+main .main-productos .grid-productos {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "a1 a2";
+  column-gap: 20px;
+  row-gap: 50px;
+  margin: 25px 15% 50px 15%;
+  justify-content: center; }
+  main .main-productos .grid-productos .filtros-responsive {
+    display: none; }
+  main .main-productos .grid-productos .grid-filtro {
+    grid-area: a1;
+    margin-top: 28px; }
+    main .main-productos .grid-productos .grid-filtro .container-fluid {
+      padding: 0;
+      background-color: #fff; }
+      main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item {
+        background-color: rgba(255, 255, 255, 0);
+        border: 0; }
+        main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item .accordion-header h2 {
+          font-size: 13px;
+          margin: 0 0 0.5rem 1rem; }
+        main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item .accordion-button {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+          width: 250px; }
+          main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed) {
+            color: #202020;
+            background-color: #fff;
+            box-shadow: none; }
+            main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+              color: #fff; }
+          main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item .accordion-button:focus {
+            box-shadow: none; }
+        main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form {
+          padding: 0rem 1rem 1rem 1rem;
+          border-bottom: 1px solid #eeeeee; }
+          main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form .form-check {
+            cursor: pointer; }
+            main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form .form-check .form-check-input {
+              border-radius: 0; }
+              main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form .form-check .form-check-input:active, main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form .form-check .form-check-input:checked {
+                background-color: #ff9900;
+                border: #ff9900; }
+              main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form .form-check .form-check-input:focus {
+                box-shadow: none;
+                border-color: rgba(0, 0, 0, 0.25); }
+            main .main-productos .grid-productos .grid-filtro .container-fluid .accordion .accordion-item form .form-check .form-check-label {
+              font-size: 14px; }
+    main .main-productos .grid-productos .grid-filtro .titulo-filtro {
+      font-size: 13px;
+      margin: 0 0 0.5rem 1rem; }
+  main .main-productos .grid-productos .grid-items {
+    grid-area: a2; }
+    main .main-productos .grid-productos .grid-items .selector-ordenarPor {
+      display: flex;
+      justify-content: flex-end;
+      height: auto;
+      align-items: center;
+      margin-bottom: 25px; }
+      main .main-productos .grid-productos .grid-items .selector-ordenarPor p {
+        font-size: 13px;
+        margin: 0 0.5rem 0 1rem; }
+      main .main-productos .grid-productos .grid-items .selector-ordenarPor .form-select {
+        border-radius: 0;
+        width: auto;
+        font-size: 13px; }
+        main .main-productos .grid-productos .grid-items .selector-ordenarPor .form-select:focus {
+          box-shadow: none;
+          border-color: rgba(0, 0, 0, 0.25); }
+    main .main-productos .grid-productos .grid-items .container .row div .card {
+      border-radius: 0;
+      align-items: center;
+      margin-bottom: 25px; }
+      main .main-productos .grid-productos .grid-items .container .row div .card:hover {
         cursor: pointer;
-        width: 105%; }
-    main .container .row div .card .card-body .card-title {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600; }
-    main .container .row div .card .card-body .card-text {
-      font-family: 'Poppins', sans-serif;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .bi::before:hover {
+        color: #ff9900; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .bi-heart {
+        position: absolute;
+        right: 20px;
+        top: 12px; }
+      main .main-productos .grid-productos .grid-items .container .row div .card img {
+        vertical-align: middle;
+        text-align: center;
+        object-fit: fill;
+        transition: all 0.5s ease;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+        main .main-productos .grid-productos .grid-items .container .row div .card img:hover {
+          cursor: pointer;
+          width: 105%; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .card-body .card-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .card-body .card-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .card-body .price {
+        padding-top: 10px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 18px; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .card-body .btn {
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 0; }
+      main .main-productos .grid-productos .grid-items .container .row div .card .card-body .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background-color: #ff9900;
+        border-color: #ff9900;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 15px; }
+        main .main-productos .grid-productos .grid-items .container .row div .card .card-body .btn-primary:hover {
+          background-color: #975b00;
+          border-color: #975b00; }
+        main .main-productos .grid-productos .grid-items .container .row div .card .card-body .btn-primary:focus {
+          box-shadow: none; }
+    main .main-productos .grid-productos .grid-items .mas-btn a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 50px;
+      margin: 50px auto auto auto;
+      background-color: none;
+      border: 1px solid #202020;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 16px;
+      color: #202020;
       font-weight: 400;
-      font-size: 14px; }
-    main .container .row div .card .card-body .btn {
-      font-weight: 400;
+      line-height: 16px;
+      text-decoration: none;
+      text-align: center; }
+      main .main-productos .grid-productos .grid-items .mas-btn a:hover {
+        background-color: #ff9900;
+        border: none;
+        color: #fff; }
+
+main .main-productos .grid-descripcion {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "b1 b2";
+  column-gap: 20px;
+  row-gap: 50px;
+  margin: 25px 15% 50px 15%;
+  justify-content: center; }
+  main .main-productos .grid-descripcion .descripcion1-grid {
+    grid-area: b1; }
+  main .main-productos .grid-descripcion .descripcion2-grid {
+    grid-area: b2; }
+  main .main-productos .grid-descripcion .descripcion1-grid, main .main-productos .grid-descripcion .descripcion2-grid {
+    margin: 5%; }
+    main .main-productos .grid-descripcion .descripcion1-grid .descripcion-grid--titulo, main .main-productos .grid-descripcion .descripcion2-grid .descripcion-grid--titulo {
+      font-size: 16px;
+      color: #ff9900;
+      font-weight: 500;
+      margin-bottom: 5px; }
+    main .main-productos .grid-descripcion .descripcion1-grid .descripcion-grid--parrafo, main .main-productos .grid-descripcion .descripcion2-grid .descripcion-grid--parrafo {
       font-size: 14px;
-      border-radius: 0; }
-    main .container .row div .card .card-body .btn-primary {
-      color: #fff;
-      background-color: #ff9900;
-      border-color: #ff9900;
-      font-family: 'Poppins', sans-serif;
-      width: 100%;
-      margin-top: 15px; }
-      main .container .row div .card .card-body .btn-primary:hover {
-        background-color: #975b00;
-        border-color: #975b00; }
+      color: #202020;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: justify; }
 
 @media (max-width: 1024px) {
-  main .container {
-    padding-top: 155px; } }
+  main {
+    padding-top: 155px; }
+    main .main-productos .grid-productos {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "a1" "a2"; }
+      main .main-productos .grid-productos .grid-filtro {
+        display: none; }
+      main .main-productos .grid-productos .filtros-responsive {
+        display: inline-block;
+        justify-content: space-between;
+        grid-area: a1;
+        width: 100vw; }
+        main .main-productos .grid-productos .filtros-responsive .filter-responsive {
+          display: inline-block; }
+          main .main-productos .grid-productos .filtros-responsive .filter-responsive p {
+            display: flex;
+            width: 100vw; }
+            main .main-productos .grid-productos .filtros-responsive .filter-responsive p .btn-primary {
+              background-color: rgba(255, 255, 255, 0);
+              border: 1px solid #202020;
+              color: #202020;
+              padding: 20px;
+              margin: 0 15%;
+              transition: all 0.5s ease; }
+              main .main-productos .grid-productos .filtros-responsive .filter-responsive p .btn-primary:focus {
+                box-shadow: none;
+                background-color: #fff; }
+            main .main-productos .grid-productos .filtros-responsive .filter-responsive p .collapsed {
+              margin: 0 15%; }
+            main .main-productos .grid-productos .filtros-responsive .filter-responsive p .btn {
+              border-radius: 0; }
+              main .main-productos .grid-productos .filtros-responsive .filter-responsive p .btn svg {
+                margin-left: 10px; }
+          main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card {
+            width: 100vw; }
+          main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body {
+            border-radius: 0;
+            padding: 1rem 15%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1); }
+            main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid {
+              padding: 0;
+              background-color: #fff; }
+              main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item {
+                background-color: rgba(255, 255, 255, 0);
+                border: 0; }
+                main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item .accordion-header h2, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item .accordion-header h2, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item .accordion-header h2, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+                  font-size: 13px;
+                  margin: 0 0 0.5rem 1rem; }
+                main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item .accordion-button, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item .accordion-button, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item .accordion-button, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item .accordion-button {
+                  border-top-left-radius: 0;
+                  border-top-right-radius: 0;
+                  width: 100%;
+                  font-size: 1.2rem;
+                  padding: 1rem 0 1.25rem 0; }
+                  main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed), main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed), main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed), main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed) {
+                    color: #202020;
+                    background-color: #fff;
+                    box-shadow: none; }
+                    main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed)::after, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed)::after, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed)::after, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+                      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                      color: #fff; }
+                  main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item .accordion-button:focus, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item .accordion-button:focus, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item .accordion-button:focus, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item .accordion-button:focus {
+                    box-shadow: none; }
+                main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form {
+                  border-bottom: 1px solid #eeeeee; }
+                  main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check {
+                    cursor: pointer;
+                    padding: 0 0 1rem 1.5rem;
+                    display: flex;
+                    gap: 0.8rem;
+                    height: auto;
+                    align-items: center; }
+                    main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input {
+                      border-radius: 0;
+                      width: 1.2em;
+                      height: 1.2em;
+                      margin-top: 0; }
+                      main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:active, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:checked, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:active, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:checked, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:active, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:checked, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:active, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:checked {
+                        background-color: #ff9900;
+                        border: #ff9900; }
+                      main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:focus, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:focus, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:focus, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-input:focus {
+                        box-shadow: none;
+                        border-color: rgba(0, 0, 0, 0.25); }
+                    main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label {
+                      font-size: 16px; }
+      main .main-productos .grid-productos .ordenarPor-responsive {
+        position: absolute;
+        right: 15%;
+        height: auto; }
+        main .main-productos .grid-productos .ordenarPor-responsive .form-select {
+          cursor: pointer;
+          border-radius: 0;
+          width: 210px;
+          font-size: 1rem;
+          font-weight: 400;
+          padding: 20px;
+          border: 1px solid #202020;
+          color: #202020;
+          background-color: rgba(255, 255, 255, 0);
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+          background-size: 16px 16px;
+          background-position: right 1rem center;
+          transition: all 0.5s ease; }
+          main .main-productos .grid-productos .ordenarPor-responsive .form-select:focus {
+            box-shadow: none;
+            background-color: #fff; }
+          main .main-productos .grid-productos .ordenarPor-responsive .form-select::placeholder {
+            content: "Ordenar por"; }
+      main .main-productos .grid-productos .grid-items {
+        grid-area: a2; }
+        main .main-productos .grid-productos .grid-items .selector-ordenarPor {
+          display: none; }
+    main .main-productos .grid-descripcion {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-template-areas: "b1" "b2";
+      row-gap: 0; }
+      main .main-productos .grid-descripcion .descripcion1-grid {
+        grid-area: b1; }
+      main .main-productos .grid-descripcion .descripcion2-grid {
+        grid-area: b2; } }
+
+@media (max-width: 767px) {
+  main {
+    padding-top: 155px; }
+    main .main-productos .grid-productos .filtros-responsive {
+      justify-content: space-between; }
+      main .main-productos .grid-productos .filtros-responsive .filter-responsive p {
+        justify-content: space-around; }
+        main .main-productos .grid-productos .filtros-responsive .filter-responsive p .button-primary {
+          margin: 0 25%; }
+        main .main-productos .grid-productos .filtros-responsive .filter-responsive p .btn {
+          margin: 0 25%; }
+        main .main-productos .grid-productos .filtros-responsive .filter-responsive p .collapsed {
+          margin: 0 25%; }
+      main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body {
+        padding: 1rem 15%; }
+    main .main-productos .grid-productos .ordenarPor-responsive {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      right: 0%;
+      height: auto;
+      margin-bottom: 25px; } }
 
 @media (max-width: 576px) {
-  main .container {
-    padding-top: 155px; } }
+  main {
+    padding-top: 114px; } }
 
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -750,12 +1196,13 @@ main .container .row {
   justify-items: center;
   align-items: center; }
   .grid-padre-cat #hijo0-cat {
-    grid-area: a1;
-    margin-top: 50px; }
-    .grid-padre-cat #hijo0-cat article iframe {
-      margin-top: 25px;
-      height: 512px;
-      width: 362px; }
+    grid-area: a1; }
+    .grid-padre-cat #hijo0-cat article #desktop {
+      margin-top: 25px; }
+    .grid-padre-cat #hijo0-cat article #tablet {
+      display: none; }
+    .grid-padre-cat #hijo0-cat article #mobile {
+      display: none; }
   .grid-padre-cat #hijo1-cat {
     grid-area: b1; }
   .grid-padre-cat #hijo2-cat {
@@ -775,54 +1222,85 @@ main .container .row {
   margin-right: 15%;
   margin-left: 15%;
   margin-bottom: 50px; }
-  .margin-body .container-fluid .row div .card {
-    border-radius: 0;
-    align-items: center;
+  .margin-body .container-fluid {
     margin-top: 25px; }
-    .margin-body .container-fluid .row div .card:hover {
-      cursor: pointer;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
-      transition: all 0.2s ease; }
-    .margin-body .container-fluid .row div .card img {
-      vertical-align: middle;
-      text-align: center;
-      object-fit: fill;
-      transition: all 1s ease;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0; }
-      .margin-body .container-fluid .row div .card img:hover {
+    .margin-body .container-fluid .row div .card {
+      border-radius: 0;
+      align-items: center;
+      margin-bottom: 25px; }
+      .margin-body .container-fluid .row div .card:hover {
         cursor: pointer;
-        width: 105%; }
-    .margin-body .container-fluid .row div .card .card-body .card-title {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600; }
-    .margin-body .container-fluid .row div .card .card-body .card-text {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 400;
-      font-size: 14px; }
-    .margin-body .container-fluid .row div .card .card-body .btn {
-      font-weight: 400;
-      font-size: 14px;
-      border-radius: 0; }
-    .margin-body .container-fluid .row div .card .card-body .btn-primary {
-      color: #fff;
-      background-color: #ff9900;
-      border-color: #ff9900;
-      font-family: 'Poppins', sans-serif;
-      width: 100%;
-      margin-top: 15px; }
-      .margin-body .container-fluid .row div .card .card-body .btn-primary:hover {
-        background-color: #975b00;
-        border-color: #975b00; }
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease; }
+      .margin-body .container-fluid .row div .card .bi::before:hover {
+        color: #ff9900; }
+      .margin-body .container-fluid .row div .card .bi-heart {
+        position: absolute;
+        right: 20px;
+        top: 12px; }
+      .margin-body .container-fluid .row div .card img {
+        vertical-align: middle;
+        text-align: center;
+        object-fit: fill;
+        transition: all 0.5s ease;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+        .margin-body .container-fluid .row div .card img:hover {
+          cursor: pointer;
+          width: 105%; }
+      .margin-body .container-fluid .row div .card .card-body .card-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600; }
+      .margin-body .container-fluid .row div .card .card-body .card-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 14px; }
+      .margin-body .container-fluid .row div .card .card-body .price {
+        padding-top: 10px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 18px; }
+      .margin-body .container-fluid .row div .card .card-body .btn {
+        font-weight: 400;
+        font-size: 14px;
+        border-radius: 0; }
+      .margin-body .container-fluid .row div .card .card-body .btn-primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background-color: #ff9900;
+        border-color: #ff9900;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 15px; }
+        .margin-body .container-fluid .row div .card .card-body .btn-primary:hover {
+          background-color: #975b00;
+          border-color: #975b00; }
+        .margin-body .container-fluid .row div .card .card-body .btn-primary:focus {
+          box-shadow: none; }
 
 @media (max-width: 1024px) {
   .grid-padre-cat {
-    padding-top: 156px;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
-    grid-template-areas: "a1" "b1" "c1" "d1"; } }
+    grid-template-areas: "a1" "b1" "c1" "d1"; }
+    .grid-padre-cat #hijo0-cat article #desktop {
+      display: none; }
+    .grid-padre-cat #hijo0-cat article #tablet {
+      margin-top: 25px;
+      display: inline-block; }
+    .grid-padre-cat #hijo0-cat article #mobile {
+      display: none; } }
 
 @media (max-width: 576px) {
+  .grid-padre-cat #hijo0-cat article #desktop {
+    display: none; }
+  .grid-padre-cat #hijo0-cat article #tablet {
+    display: none; }
+  .grid-padre-cat #hijo0-cat article #mobile {
+    margin-top: 25px;
+    display: inline-block; }
   .grid-padre-cat #hijo2-cat article iframe, .grid-padre-cat #hijo3-cat article iframe {
     width: 80vw; } }
 
@@ -831,7 +1309,7 @@ main .container .row {
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -849,7 +1327,7 @@ main .container .row {
 .padre-qs {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "a1 a2" "b1 b2" "c1 c2";
   column-gap: 20px;
   row-gap: 50px;
@@ -914,30 +1392,36 @@ main .container .row {
       font-size: 14px; }
 
 @media (max-width: 1024px) {
-  .padre-qs {
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
-    grid-template-areas: "a1" "a2" "b1" "b2" "c1" "c2";
-    row-gap: 5px; }
-    .padre-qs div:nth-child(1) {
-      grid-area: a1; }
-    .padre-qs div:nth-child(2) {
-      grid-area: a2; }
-    .padre-qs div:nth-child(3) {
-      grid-area: b2; }
-    .padre-qs div:nth-child(4) {
-      grid-area: b1; }
-    .padre-qs div:nth-child(5) {
-      grid-area: c1; }
-    .padre-qs div:nth-child(6) {
-      grid-area: c2; } }
+  main {
+    padding-top: 155px; }
+    main .padre-qs {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-template-areas: "a1" "a2" "b1" "b2" "c1" "c2";
+      row-gap: 25px; }
+      main .padre-qs div:nth-child(1) {
+        grid-area: a1; }
+      main .padre-qs div:nth-child(2) {
+        grid-area: a2; }
+      main .padre-qs div:nth-child(3) {
+        grid-area: b2; }
+      main .padre-qs div:nth-child(4) {
+        grid-area: b1; }
+      main .padre-qs div:nth-child(5) {
+        grid-area: c1; }
+      main .padre-qs div:nth-child(6) {
+        grid-area: c2; } }
+
+@media (max-width: 576px) {
+  main {
+    padding-top: 114px; } }
 
 /* COLOR */
 /* SOMBRA */
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -952,40 +1436,6 @@ main .container .row {
 
 /* MIXIN */
 /* CONTACTO */
-/*Foto de los encabezados + título en los mains */
-.encabezado {
-  margin-bottom: 50px;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: initial;
-  padding-right: initial; }
-  .encabezado .foto-encabezado {
-    display: block;
-    object-fit: cover;
-    object-position: top;
-    max-width: none;
-    width: 100vw;
-    height: auto;
-    max-height: 600px; }
-  .encabezado .titulo-encabezado {
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    bottom: initial;
-    width: 100%;
-    margin: auto; }
-    .encabezado .titulo-encabezado h1 {
-      text-align: center;
-      font-size: calc(15px + 3vw);
-      color: #fff;
-      font-weight: 600; }
-
-/*     //////////      */
 .grid-padre-cont {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -1154,12 +1604,6 @@ main .container .row {
         font-style: italic; }
 
 @media (max-width: 1024px) {
-  /* Foto de los encabezados + título en los mains */
-  .encabezado {
-    padding-top: 156px; }
-    .encabezado .titulo-encabezado {
-      padding-top: 156px; }
-  /*     ////     */
   .grid-padre-cont {
     display: grid;
     grid-template-columns: 100%;
@@ -1184,12 +1628,6 @@ main .container .row {
         text-align: center; } }
 
 @media (max-width: 576px) {
-  /* Foto de los encabezados + título en los mains */
-  .encabezado {
-    padding-top: 114px; }
-    .encabezado .titulo-encabezado {
-      padding-top: 114px; }
-  /*     ////     */
   .grid-padre-cont .formulario-container form .center-form-items {
     display: flex;
     flex-direction: column;
@@ -1208,7 +1646,7 @@ main .container .row {
 /* TRANSICIÓN */
 /* EXTEND */
 /* CATÁLOGO */
-.titulo-h2, .grid-padre-cat #hijo0-cat h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
+.titulo-h2, .grid-padre-cat #hijo1-cat h2, .margin-body h2, .margin-body .container-fluid .accordion .accordion-item .accordion-header h2 {
   text-align: center;
   font-weight: 400;
   color: #313131;
@@ -1225,6 +1663,34 @@ main .container .row {
 /* CONTACTO */
 .footer-color {
   background-color: #202020; }
+  .footer-color .footer-badges .flex-badges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url("../assets/img/footer/footer-badges-bg.png");
+    background-repeat: no-repeat; }
+    .footer-color .footer-badges .flex-badges p {
+      color: #fff;
+      text-align: center;
+      font-size: 38px;
+      padding: 0 0 20px 0; }
+      .footer-color .footer-badges .flex-badges p span {
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 0 20px 0; }
+    .footer-color .footer-badges .flex-badges .container .row img {
+      margin: auto;
+      width: 150px;
+      height: auto; }
   .footer-color .footer-organizacion {
     width: 70%;
     margin: 0 15% 0 15%;
@@ -1253,6 +1719,7 @@ main .container .row {
           text-decoration: none;
           color: #fff;
           margin: 10px;
+          cursor: pointer;
           transition: all 0.2s ease; }
           .footer-color .footer-organizacion .contenedor-footer-nav .elemento .link a:hover {
             color: #eeeeee; }
@@ -1358,6 +1825,36 @@ main .container .row {
   .footer-rs {
     display: block;
     background-color: #202020; }
+    .footer-rs .footer-badges .flex-badges {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-attachment: local;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      background-image: url("../assets/img/footer/footer-badges-bg.png");
+      background-repeat: no-repeat;
+      padding: 50px 0 50px 0; }
+      .footer-rs .footer-badges .flex-badges p {
+        color: #fff;
+        text-align: center;
+        font-size: 38px;
+        padding: 0 0 20px 0; }
+        .footer-rs .footer-badges .flex-badges p span {
+          margin: 0 10% 0 10%;
+          display: block;
+          color: #fff;
+          text-align: center;
+          font-size: 18px;
+          padding: 20px 0 20px 0; }
+      .footer-rs .footer-badges .flex-badges .container .row img {
+        margin: auto;
+        width: 150px;
+        height: auto;
+        padding: 10px; }
     .footer-rs .footerNav {
       width: 100%;
       background-color: #eeeeee;
@@ -1396,16 +1893,16 @@ main .container .row {
           background-color: #fff; }
       .footer-rs .footerNav .footerNav-item {
         background-color: rgba(231, 231, 231, 0);
-        transition: all .2s ease; }
+        transition: all 0.2s ease; }
         .footer-rs .footerNav .footerNav-item:hover {
           background-color: #fff; }
         .footer-rs .footerNav .footerNav-item a {
           text-decoration: none;
           color: #202020;
-          transition: all .2s ease; }
+          transition: all 0.2s ease; }
           .footer-rs .footerNav .footerNav-item a:hover {
             text-decoration: none;
-            color: #313131; }
+            color: #e7e7e7; }
           .footer-rs .footerNav .footerNav-item a::after {
             float: right;
             right: 10%;
@@ -1479,7 +1976,7 @@ main .container .row {
         margin-right: 10px;
         text-align: center;
         text-decoration: underline solid 1px rgba(128, 128, 128, 0);
-        transition: all .2s ease; }
+        transition: all 0.2s ease; }
         .pie-rs .pie-contenedor-rs a:hover {
           text-decoration: underline solid 1px gray;
           color: #808080; }

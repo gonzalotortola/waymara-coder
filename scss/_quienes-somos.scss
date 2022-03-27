@@ -3,7 +3,7 @@
 .padre-qs {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "a1 a2"
                         "b1 b2"
                         "c1 c2";
@@ -127,37 +127,48 @@
 
 @media (max-width: 1024px) {
 
-    .padre-qs {
-        grid-template-columns: 100%;
-        grid-template-rows: 300px 300px 300px 300px 300px 300px;
-        grid-template-areas: "a1" "a2" "b1" "b2" "c1" "c2";
-        row-gap: 5px;
+    main {
+        padding-top: 155px;
 
-        div {
+        .padre-qs {
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-areas: "a1" "a2" "b1" "b2" "c1" "c2";
+            row-gap: 25px;
+    
+            div {
+    
+                &:nth-child(1) {
+                    grid-area: a1;
+                }
+                
+                &:nth-child(2){
+                    grid-area: a2;
+                }
+                
+                &:nth-child(3){
+                    grid-area: b2;
+                }
+                
+                &:nth-child(4){
+                    grid-area: b1;
+                }
+                
+                &:nth-child(5){
+                    grid-area: c1;
+                }
+                
+                &:nth-child(6){
+                    grid-area: c2;
+                }
+            }       
+        }
+    }
+}
 
-            &:nth-child(1) {
-                grid-area: a1;
-            }
-            
-            &:nth-child(2){
-                grid-area: a2;
-            }
-            
-            &:nth-child(3){
-                grid-area: b2;
-            }
-            
-            &:nth-child(4){
-                grid-area: b1;
-            }
-            
-            &:nth-child(5){
-                grid-area: c1;
-            }
-            
-            &:nth-child(6){
-                grid-area: c2;
-            }
-        }       
+@media (max-width: 576px) {
+
+    main {
+        padding-top: 114px;
     }
 }

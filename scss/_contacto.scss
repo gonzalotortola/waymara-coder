@@ -1,51 +1,5 @@
 @import "variables.scss";
 
-
-/*Foto de los encabezados + título en los mains */
-
-
-.encabezado {
-    margin-bottom: 50px;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: initial;
-    padding-right: initial;
-
-    .foto-encabezado {
-        display: block;
-        object-fit: cover;
-        object-position: top;
-        max-width: none;
-        width: 100vw;
-        height: auto;
-        max-height: 600px;
-    }
-    
-    .titulo-encabezado {
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        bottom: initial;
-        width: 100%;
-        margin: auto;
-
-        h1 {
-            text-align: center;
-            font-size: calc(15px + 3vw);
-            color: $blanco;
-            font-weight: 600;
-        }
-    }
-}
-
-/*     //////////      */ 
-
-
 .grid-padre-cont {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -260,19 +214,6 @@
 
 @media (max-width: 1024px) {
 
-    /* Foto de los encabezados + título en los mains */
-
-    .encabezado {
-        padding-top: 156px;
-
-        .titulo-encabezado{
-            padding-top: 156px;
-        }
-    }
-
-    /*     ////     */
-
-
     .grid-padre-cont {
         display: grid;
         grid-template-columns: 100%;
@@ -325,18 +266,6 @@
 }
 
 @media (max-width: 576px) {
-
-    /* Foto de los encabezados + título en los mains */
-
-    .encabezado {
-        padding-top: 114px;
-
-        .titulo-encabezado{
-            padding-top: 114px;
-        }
-    }
-
-    /*     ////     */
 
     .grid-padre-cont {
 

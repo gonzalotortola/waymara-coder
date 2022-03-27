@@ -11,10 +11,10 @@
 .grid-index {
     margin: 0% 15% 50px 15%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 300px 50px 300px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px auto 50px auto;
     justify-items: center;
-    align-items: center;
+    align-items: start;
     column-gap: 30px;
     row-gap: 20px;
     grid-template-areas: "a1 a1 a1"
@@ -60,6 +60,99 @@
         font-weight: 600;
         color: $naranja;
         font-family: 'Poppins', sans-serif;
+    }
+
+    #hijo1-index, #hijo2-index, #hijo3-index, #hijo5-index, #hijo6-index, #hijo7-index {
+
+        .card {
+            border-radius: 0;
+            align-items: center;
+            margin-bottom: 25px;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: $sombra-2;
+                transition: $transicion-rapida;
+            }
+
+            .bi {
+
+                &::before {
+                    
+                    &:hover {
+                        color: $naranja;
+                    }
+                }
+            }
+            .bi-heart {
+                position: absolute;
+                right: 20px;
+                top: 12px;
+            }
+
+            img {
+                vertical-align: middle;
+                text-align: center;
+                object-fit: fill;
+                transition: $transicion-lenta;
+
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+
+                &:hover {
+                    cursor: pointer;
+                    width: 105%;
+                }
+            }
+
+            .card-body {
+
+                .card-title {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                }
+
+                .card-text {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+
+                .price {
+                    padding-top: 10px;
+                    font-size: 18px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+
+                .btn {
+                    font-weight: 400;
+                    font-size: 14px;
+                    border-radius: 0;
+                }
+
+                .btn-primary {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $blanco;
+                    background-color: $naranja;
+                    border-color: $naranja;
+                    font-family: 'Poppins', sans-serif;
+                    margin-top: 15px;
+
+                    &:hover {
+                        background-color: $naranja-hover-oscuro;
+                        border-color: $naranja-hover-oscuro;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
     }
 
     .producto {
@@ -131,6 +224,47 @@
     }
 }
 
+.index-catalogo {
+
+    .flex-btn {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        background-attachment: local;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-image: url('../assets/img/index/index-catalogo-desk.png');
+        background-repeat: no-repeat;
+
+        .catalogo-btn {
+            background-color: $naranja;
+            width: auto;
+            height: auto;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            color: $blanco;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            transition: $transicion-lenta;
+            margin-bottom: 50px;
+            text-decoration: none;
+    
+            &:hover {
+                box-shadow: $sombra-2;
+                color: $naranja;
+                background-color: $blanco;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
 @media (max-width: 1024px) {
 
     #carousel-mobile {
@@ -138,7 +272,6 @@
     }
 
     .carousel {
-        margin-top: 155px;
 
         .carousel-control-prev, .carousel-control-next {
             margin: 0;
@@ -146,9 +279,21 @@
     }
 
     .grid-index {
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 300px 300px 300px 50px 300px 300px 300px;
+        grid-template-columns: auto;
+        grid-template-rows: 50px auto auto auto 50px auto auto auto;
         grid-template-areas: "a1" "b1" "b2" "b3" "c1" "d1" "d2" "d3"
+    }
+
+    .index-catalogo {
+
+        .flex-btn {
+            background-image: url('../assets/img/index/index-catalogo-rs.png');
+            align-items: center;
+
+            .catalogo-btn {
+                margin-bottom: 0px;
+            }
+        }
     }
 }
 
@@ -161,9 +306,5 @@
 
     #carousel-mobile {
         display: block;
-    }
-
-    .carousel {
-        margin-top: 114px;
     }
 }

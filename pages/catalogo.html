@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Catálogo | Waymara</title>
     <meta name="keywords" content="catalogo, waymara, tucuman, argentina, cosmetica, perfume, alquimia, indumentaria, ropa, deportiva, urbana, crema, corporal, esmalte, body, splash">
@@ -113,7 +114,7 @@
                 <nav class="mainNav__bar">
                     <ul  class="mainNav__container" id="menu">
                         <li class="dropdown">
-                            <a class="dropdown-link" href="indumentaria.html">Indumentaria</a>
+                            <p class="dropdown-link">Indumentaria</a>
                             <ul class="dropdown-content">
                                 <a href="urban.html">Urban</a>
                                 <a href="energy-life.html">Energy Life</a>
@@ -160,12 +161,26 @@
     <!-- fin Menú hamburguesa rs -->
 
     <main>
+
+        <div class="encabezado">
+            <div class="div-imagen">
+                <img class="foto-encabezado" src="../assets/img/encabezados/Catalogo-encabezado.png" alt="">
+            </div>
+        </div>
+        
+        <div class="encabezado-responsive">
+            <div class="div-imagen">
+                <img class="foto-encabezado" src="../assets/img/encabezados/Catalogo-encabezado-responsive.png" alt="">
+            </div>
+        </div>
+
         <div class="grid-padre-cat"> <!-- Catálogo -->
             
             <div id="hijo0-cat" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
-                <h2>CATÁLOGO</h2>
                 <article>
-                    <iframe src="https://www.w3docs.com/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf" frameborder="0"></iframe>
+                    <iframe id="desktop" style="width:900px;height:600px" src="https://online.fliphtml5.com/cjsxr/oity/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+                    <iframe id="tablet" style="width:500px;height:350px" src="https://online.fliphtml5.com/cjsxr/oity/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+                    <iframe id="mobile" style="width:400px;height:250px" src="https://online.fliphtml5.com/cjsxr/oity/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
                 </article>
             </div>
 
@@ -189,46 +204,54 @@
         </div>
 
         <div class="margin-body" id="hijo0-cat">
-            <h2 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">Productos más destacadas</h2>
+            <h2 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">Productos más destacados</h2>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col d-flex justify-content-center" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+                    <div class="col d-flex justify-content-center"  data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="200">
                         <div class="card" style="width: 18rem;">
-                            <img src="../assets/img/esmalte1.JPG" class="card-img-top" alt="...">
+                            <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                            <img src="../assets/img/urban/Urban-2.png" class="card-img-top" alt="Remerón Celestina de color azul">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                              <h5 class="card-title">Remerón Celestina</h5>
+                              <p class="card-text">Línea amplia. Con detalles tajo a los costados con vuelo. Piquet de algodón azul francia.<br>TALLES 1 AL 4.</p>
+                              <p class="price">$4.299</p>
+                              <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="200">
+                    <div class="col d-flex justify-content-center"  data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="300">
                         <div class="card" style="width: 18rem;">
-                            <img src="../assets/img/esmalte1.JPG" class="card-img-top" alt="...">
+                            <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                            <img src="../assets/img/urban/Urban-4.png" class="card-img-top" alt="Remera Sally en color naranja pastel">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                              <h5 class="card-title">Remera Sally</h5>
+                              <p class="card-text">Mangas 3/4. Hombro caído. Escote en V. Jersey flame. Cómoda y versátil.<br>TALLES 2 AL 5.</p>
+                              <p class="price">$1.999</p>
+                              <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="300">
+                    <div class="col d-flex justify-content-center"  data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="400">
                         <div class="card" style="width: 18rem;">
-                            <img src="../assets/img/esmalte1.JPG" class="card-img-top" alt="...">
+                            <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                            <img src="../assets/img/energy/Energy-5.png" class="card-img-top" alt="Buzo Olivia en color verde oliva">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                              <h5 class="card-title">Buzo Olivia</h5>
+                              <p class="card-text">Buzo con capucha de lanilla en color verde oliva con detalles en negro.<br>TALLE ÚNICO.</p>
+                              <p class="price">$4.699</p>
+                              <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col d-flex justify-content-center" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="400">
+                    <div class="col d-flex justify-content-center"  data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-delay="500">
                         <div class="card" style="width: 18rem;">
-                            <img src="../assets/img/esmalte1.JPG" class="card-img-top" alt="...">
+                            <a href="#"> <i class="bi bi-heart" style="font-size: 1.8rem; color: rgb(0, 0, 0);"></i> </a>
+                            <img src="../assets/img/perfumes/Perfumes-9.png" class="card-img-top" alt="Perfume de hogar de lavanda y verbena">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                              <h5 class="card-title">Fragancias Home | Lavanda y Verbena</h5>
+                              <p class="card-text">250ml<br>Mejora el autoestima. Renueva las fuerzas. Equilibra las emociones.</p>
+                              <p class="price">$799</p>
+                              <a href="#" class="btn btn-primary"> <i class="bi bi-cart" style="font-size: 1rem; padding-right: 15px;"></i>Agregar al carrito</a>
                             </div>
                         </div>
                     </div>
@@ -239,6 +262,24 @@
 
 	<!-- inicio footer rs -->
     <footer class="footer-rs">
+
+        <div class="footer-badges">
+
+            <div class="flex-badges">
+                <p>Productos 100% sustentables<span>Estamos comprometidos con nuestro mundo</span></p>
+
+                <div class="container">
+    
+                    <div class="row">
+                        <img src="../assets/img/SVG/footer/SVG/cruelty-free.svg" alt="Productos no testeados en animales">
+                        <img src="../assets/img/SVG/footer/SVG/vegan.svg" alt="Productos 100% veganos">
+                        <img src="../assets/img/SVG/footer/SVG/bio.svg" alt="Productos biodegradables">
+                        <img src="../assets/img/SVG/footer/SVG/hypoallergenic.svg" alt="Formulas seguras e hipoalergenicas">
+                        <img src="../assets/img/SVG/footer/SVG/paraben-free.svg" alt="Productos libres de parabenos">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <nav class="footerNav">
 
@@ -307,6 +348,24 @@
     <!-- inicio footer -->
     <footer class="footer-color">
 
+        <div class="footer-badges">
+
+            <div class="flex-badges">
+                <p>Productos 100% sustentables<span>Estamos comprometidos con nuestro mundo</span></p>
+
+                <div class="container">
+    
+                    <div class="row">
+                        <img src="../assets/img/SVG/footer/SVG/cruelty-free.svg" alt="Productos no testeados en animales">
+                        <img src="../assets/img/SVG/footer/SVG/vegan.svg" alt="Productos 100% veganos">
+                        <img src="../assets/img/SVG/footer/SVG/bio.svg" alt="Productos biodegradables">
+                        <img src="../assets/img/SVG/footer/SVG/hypoallergenic.svg" alt="Formulas seguras e hipoalergenicas">
+                        <img src="../assets/img/SVG/footer/SVG/paraben-free.svg" alt="Productos libres de parabenos">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <nav class="footer-organizacion">
             <ul class="contenedor-footer-nav">
                     <li class="elemento">
@@ -315,7 +374,7 @@
                         </h5>
                         <ul>
                             <li class="link">
-                                <a href="indumentaria.html">Indumentaria</a>
+                                <a>Indumentaria</a>
                                 <ul>
                                     <li class="sub-link"><a href="urban.html">Urban</a></li>
                                     <li class="sub-link"><a href="energy-life.html">Energy Life</a></li>
