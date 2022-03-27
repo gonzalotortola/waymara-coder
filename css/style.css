@@ -815,6 +815,8 @@ p {
 @media (max-width: 576px) {
   #carousel-desk {
     display: none; }
+  .grid-index {
+    margin: 0 0 50px 0; }
   #carousel-mobile {
     display: block; } }
 
