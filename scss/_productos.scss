@@ -318,7 +318,7 @@ main {
                     width: 100vw;
 
                     .filter-responsive {
-                        display: inline-block;
+                        display: inline-block;                       
     
                         p {
                             display: flex;
@@ -364,7 +364,7 @@ main {
                                 .container-fluid {
                                     padding: 0;
                                     background-color: $blanco;
-                
+              
                                     .accordion {
                             
                                         .accordion-item {
@@ -435,6 +435,50 @@ main {
                                                     }
                                                 }
                                             }
+                                        }
+                                    }
+
+                                    .filter-btns {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        margin: 20px 0 0 0;
+
+                                        .aplicar-btn {
+                                            padding: 20px 25px 20px 25px;
+                                            background-color: $naranja;
+                                            border: 1px solid $naranja;
+                                            cursor: pointer;
+                                            transition: $transicion-rapida;
+                                            font-size: 16px;
+                                            color: $blanco;
+                                            font-weight: 400;
+                                            line-height: 16px;
+                                            text-decoration: none;
+                                            text-align: center;                                            
+                                
+                                            &:hover {
+                                                background-color: $naranja-hover-oscuro;
+                                                border: 1px solid $naranja-hover-oscuro;
+                                            }
+                                        }
+                                            
+                                        .limpiar-btn {
+                                            padding: 20px 25px 20px 25px;
+                                            background-color: none;
+                                            border: 1px solid $gris-oscuro;
+                                            cursor: pointer;
+                                            transition: $transicion-rapida;
+                                            font-size: 16px;
+                                            color: $gris-oscuro;
+                                            font-weight: 400;
+                                            line-height: 16px;
+                                            text-decoration: none;
+                                            text-align: center;                                            
+                                
+                                            &:hover {
+                                                background-color: $blanco;
+                                            }                              
                                         }
                                     }
                                 }

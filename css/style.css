@@ -1103,6 +1103,40 @@ main .main-productos .grid-descripcion {
                         border-color: rgba(0, 0, 0, 0.25); }
                     main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .accordion .accordion-item form .form-check .form-check-label {
                       font-size: 16px; }
+              main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .filter-btns, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .filter-btns, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .filter-btns, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .filter-btns {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0 0 0; }
+                main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .filter-btns .aplicar-btn, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .filter-btns .aplicar-btn, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .filter-btns .aplicar-btn, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .filter-btns .aplicar-btn {
+                  padding: 20px 25px 20px 25px;
+                  background-color: #ff9900;
+                  border: 1px solid #ff9900;
+                  cursor: pointer;
+                  transition: all 0.2s ease;
+                  font-size: 16px;
+                  color: #fff;
+                  font-weight: 400;
+                  line-height: 16px;
+                  text-decoration: none;
+                  text-align: center; }
+                  main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .filter-btns .aplicar-btn:hover, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .filter-btns .aplicar-btn:hover, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .filter-btns .aplicar-btn:hover, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .filter-btns .aplicar-btn:hover {
+                    background-color: #975b00;
+                    border: 1px solid #975b00; }
+                main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .filter-btns .limpiar-btn, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .filter-btns .limpiar-btn, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .filter-btns .limpiar-btn, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .filter-btns .limpiar-btn {
+                  padding: 20px 25px 20px 25px;
+                  background-color: none;
+                  border: 1px solid #202020;
+                  cursor: pointer;
+                  transition: all 0.2s ease;
+                  font-size: 16px;
+                  color: #202020;
+                  font-weight: 400;
+                  line-height: 16px;
+                  text-decoration: none;
+                  text-align: center; }
+                  main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapse .card-body .container-fluid .filter-btns .limpiar-btn:hover, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsing .card-body .container-fluid .filter-btns .limpiar-btn:hover, main .main-productos .grid-productos .filtros-responsive .filter-responsive .show .card-body .container-fluid .filter-btns .limpiar-btn:hover, main .main-productos .grid-productos .filtros-responsive .filter-responsive .collapsed .card-body .container-fluid .filter-btns .limpiar-btn:hover {
+                    background-color: #fff; }
       main .main-productos .grid-productos .ordenarPor-responsive {
         position: absolute;
         right: 15%;
