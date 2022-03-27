@@ -280,8 +280,8 @@
 
     .grid-index {
         grid-template-columns: auto;
-        grid-template-rows: 50px auto auto auto 50px auto auto auto;
-        grid-template-areas: "a1" "b1" "b2" "b3" "c1" "d1" "d2" "d3"
+        grid-template-rows: auto auto auto auto auto auto auto auto;
+        grid-template-areas: "a1" "b1" "b2" "b3" "c1" "d1" "d2" "d3";
     }
 
     .index-catalogo {
@@ -303,6 +303,11 @@
     #carousel-desk {
         display: none;
     }
+
+    .grid-index {
+        margin: 0 0 50px 0;
+    }
+
 
     #carousel-mobile {
         display: block;
