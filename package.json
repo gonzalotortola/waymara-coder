@@ -296,5 +296,13 @@
     "yargs": "^17.3.1",
     "yargs-parser": "^20.2.9"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalotortola/waymara-coder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gonzalotortola/waymara-coder/issues"
+  },
+  "homepage": "https://github.com/gonzalotortola/waymara-coder#readme",
   "description": ""
 }

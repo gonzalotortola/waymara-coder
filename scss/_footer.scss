@@ -291,18 +291,18 @@
         }
 
         .footerNav {
-            width : 100%; 
+            width: 100%; 
             background-color: $gris-claro;
             transition: $transicion-rapida;
 
             .footerNav-titulo {
-                padding : 30px 5% 30px 5%;
+                padding: 30px 5% 30px 5%;
                 background-color: $gris-oscuro; 
-                color : $blanco;
+                color: $blanco;
                 font-family: 'Poppins', sans-serif;
                 font-size: 16px;
                 font-weight: 400;
-                cursor : pointer;
+                cursor: pointer;
                 display: block;
                 margin: 0 auto;
                 transition: $transicion-rapida;
@@ -319,12 +319,12 @@
             }
 
             .footerNav-titulo-2 {
-                padding : 30px 5% 30px 5%;
+                padding: 30px 5% 30px 5%;
                 color: $gris-oscuro;
                 font-family: 'Poppins', sans-serif;
                 font-size: 16px;
                 font-weight: 400;
-                cursor : pointer;
+                cursor: pointer;
                 display: block;
                 transition: $transicion-rapida;
         
@@ -341,20 +341,21 @@
             
             .footerNav-item {
                 background-color: rgba(231, 231, 231, 0);
-                transition:  $transicion-rapida;
+                transition: $transicion-rapida;
         
                 &:hover {
                     background-color: $blanco;
                 }
         
                 a {
-                    text-decoration : none;
-                    color : $gris-oscuro;
+                    padding: 30px 5% 30px 5%;
+                    text-decoration: none;
+                    color: $gris-oscuro;
                     transition: $transicion-rapida;
+                    display: block;
             
                     &:hover {
-                        text-decoration : none;
-                        color: rgba(231, 231, 231, 1);
+                        text-decoration: none;
                     }
         
                     &::after {
@@ -380,10 +381,6 @@
                 font-size: 16px;
                 font-weight: 400;
                 cursor: pointer;
-        
-                .footerNav-item {
-                    padding : 30px 5% 30px 5%;
-                }
             }
         
             label {
